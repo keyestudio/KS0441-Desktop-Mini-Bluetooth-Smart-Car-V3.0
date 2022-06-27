@@ -1,0 +1,4371 @@
+![33](media/b604495cfbf010634c8a7e91536302d2.png)
+
+**Contents**
+
+[1. Description 1](#description)
+
+[2. Parameters 3](#parameters)
+
+[3. Component List 4](#_Toc32247)
+
+[4. Software Introduction 15](#software-introduction)
+
+[1) Installing Arduino IDE 15](#installing-arduino-ide)
+
+[2) Introduction for Mixly Blocks 16](#_Toc1032)
+
+[3) Importing Robot Library 17](#importing-robot-library)
+
+[5. Projects Guide 21](#projects-guide)
+
+[Project 1: UNO R3 Built-in LED 21](#project-1-uno-r3-built-in-led)
+
+[Project 2: LED Blink 37](#project-2-led-blink)
+
+[Project 3: Obstacles Detection 45](#project-3-obstacles-detection)
+
+[Project 4: Playing Melody 60](#project-4-playing-melody)
+
+[Project 5: Obstacles Alarm 76](#project-5-obstacles-alarm)
+
+[Project 6: Motor Driving and Speed Control
+87](#project-6-motor-driving-and-speed-control)
+
+[Project 7: Library Driving Motor 101](#project-7-library-driving-motor)
+
+[Project 8: Line Tracking Sensor 108](#project-8-line-tracking-sensor)
+
+[Project 9: Infrared Receiver 123](#project-9-infrared-receiver)
+
+[Assembly Steps for Smart Car 137](#assembly-steps-for-smart-car)
+
+[1) Bottom motor parts 137](#bottom-motor-parts)
+
+[2) Battery case 141](#battery-case)
+
+[3) Tracking sensor and wheels 143](#tracking-sensor-and-wheels)
+
+[4) Ultrasonic module 153](#ultrasonic-module)
+
+[5) Acrylic top board 155](#acrylic-top-board)
+
+[6) Complete Car 161](#complete-car)
+
+[Project 10: Following Robot 171](#project-10-following-robot)
+
+[Project 11: Obstacle Avoiding Robot 189](#project-11-obstacle-avoiding-robot)
+
+[Project 12: Line Tracking Robot 204](#project-12-line-tracking-robot)
+
+[Project 13: IR Remote Control Robot 218](#project-13-ir-remote-control-robot)
+
+[Project 14: Bluetooth Controlled Robot
+231](#project-14-bluetooth-controlled-robot)
+
+[ Bluetooth Remote Control: 232](#bluetooth-remote-control)
+
+[ Using Bluetooth APP 234](#using-bluetooth-app)
+
+[ Build Bluetooth Control Robot: 258](#build-bluetooth-control-robot)
+
+[Project 15: Bluetooth Multi-function Robot
+271](#project-15-bluetooth-multi-function-robot)
+
+[6. Resource Download 336](#resource-download)
+
+[7. Our Tutorial 337](#our-tutorial)
+
+[8. About keyestudio 337](#about-keyestudio)
+
+[9. Customer Service 339](#customer-service)
+
+# Description
+
+We can often see others on the internet making use of control boards and
+electrical components to build their own creative robots. Wanna DIY your own
+robot?
+
+Here comes keyestudio desktop mini Bluetooth smart car V3.0, which is an
+upgraded version of keyestudio desktop mini Bluetooth smart car V2.0.
+
+The smart car still keeps the functions like line tracking, obstacle avoidance,
+IR and Bluetooth control and more.
+
+Furthermore, we make a great improvement for the smart car as follows:
+
+1.  The Acrylic plates are more bright and colorful;
+
+2.  Adding a microphone sound module to make a fantastic sound when driving the
+    car running;
+
+3.  Using Bluetooth HM-10 module,which can support Bluetooth 4.0; supporting
+    both Android and iOS system; also can actuate the smart car with our own
+    designed Bluetooth APP.
+
+4.  Can freely choose the battery case 18650 or 4-cell AA battery case to supply
+    power for the robot car. Note that batteries are Not Included. Users can
+    freely choose two 18650 batteries or four AA batteries (1.5V) to supply
+    power for the robot car.
+
+5.  Making improvements on the motor drive board; one is coming with a slide
+    switch for controlling the power switch;the other is adding 8 jumper caps to
+    control the DC motor direction by hand,easy for code debugging.
+
+6.  Coding the robot car with Mixly blocks software, more simple and ready to
+    play.
+
+![ks0441-1](media/a7f6b4f085859bb50f4edac798bb9a53.jpeg)From the basics up to
+complex projects, through this kit you can learn to control the robot car with
+**Mixly blocks coding**. Easy to code and learn coding and computational
+thinking.
+
+If you are looking for inspiration, you can find a great variety of tutorials
+here. Take your brain on a fun and inspiring journey through the world of
+programming and electronics.
+
+# Parameters
+
+1.  Motor Voltage range: 1-6V; motor shaft length: 10mm; speed: 6.0V 100rpm/min.
+
+2.  Motor control is driven by L298P;
+
+3.  Three groups of line tracking modules, to detect black-white line with
+    higher accuracy and can also be used for anti-fall control;
+
+4.  Two groups of obstacle detector modules, to detect whether there are
+    obstacles on the left or right side of smart car; Ultrasonic module is used
+    to detect the distance between ultrasonic and obstacles, forming the smart
+    car’s obstacle avoidance system;
+
+5.  ![ks0441-2](media/12d101d505db43bd833a57d2b65aaa84.jpeg)Bluetooth wireless
+    module can be paired with Bluetooth device on mobile phone to remotely
+    control smart car;
+
+6.  Infrared receiver module is matched with an infrared remote control to
+    control the smart car;
+
+7.  Can access the external 7 \~ 12V voltage.
+
+# Component List
+
+When get this smart car kit, at first glance, you will see the beautiful
+packaging box. And each component is safely packed inside the small bag in
+order. You will get such a bulk of components and screws to make your own smart
+car. So we have listed all the components as follows:
+
+| **No.** | **Components**                                                                                  | **Quantity** | **Picture**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|---------|-------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         | Keyestudio UNO R3 Main Board                                                                    | 1            | ![KS0470-1-1(2)](media/d280184b4900c370a6e6929cc67e7847.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|         | Keyestudio quick connectors motor driver shield V2                                              | 1            | ![31](media/95d8946ad363972cf310b36d6c69c8f3.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|         | Keyestudio quick connectors IR receiver module                                                  | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | Keyestudio quick connectors line tracking sensor                                                | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | Keyestudio quick connectors obstacle detector module                                            | 2            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|         | Keyestudio quick connectors ultrasonic module                                                   | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | keyestudio HM-10 Bluetooth -4.0 V3                                                              | 1            | ![ks0364-1](media/d3582f3350a4cc87b6dd21214215eca6.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|         | Keyestudio Power Amplification Module                                                           | 1            | ![8](media/6f970dcd9e297677df2c75e95049100b.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|         | Keyestudio quick connectors 12FN20 motor A connector                                            | 1            | ![0](media/506fc3c83482d83da866b8f361a6fcd7.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|         | Keyestudio quick connectors 12FN20 motor B connector                                            | 1            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|         | Keyestudio JMFP-4 17-button 86\*40\*6.5MM yellow (eco-friendly) (no battery)                    | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | Double-Connector JST-PH2.0MM-5P 24AWG blue-green-yellow-red-black wire 15CM (reverse direction) | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | Double-Connector JST-PH2.0MM-4P 24AWG green-yellow-red-black wire 8CM (reverse direction)       | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | Double-Connector JST-PH2.0MM-3P 24AWG yellow-red-black wire 8CM  (reverse direction)            | 3            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)  ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|         | Double-Connector JST-PH2.0MM-2P 24AWG red-black wire 160mm                                      | 2            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|         | 18650 Battery holder with JST-PH2.0MM-2P socket lead, black-red lead length 115mm               | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | 4-cell AA battery case +JST-PH2.0MM-2P 150mm lead                                               | 1            | ![1](media/7f52d6214f28c4b869b3a28115b3fe51.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|         | Screw M2\*10MM round head                                                                       | 6            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|         | M2 nickle plating Nut                                                                           | 6            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|         | Screw M3\*10MM round cross head                                                                 | 12           | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|         | Screw M3\*6MM round head                                                                        | 18           | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                           |
+|         | Screw M3\*8MM flat head                                                                         | 4            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|         | M3 nickle plating Nut                                                                           | 20           | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) |
+|         | Dual-pass M3\*40MM Copper Pillar                                                                | 4            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|         | Single-pass M3\*8+6MM                                                                           | 6            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|         | Single-pass M3\*5+6MM                                                                           | 2            |  ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg) ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|         | ABS Plastic +rubber Wheel  Diameter: 43mm; Width: 9mm ; Aperture: 3mm D-type hole               | 2            | ![22](media/e9cbcb794d2e0b54af708fd7683a6844.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|         | white U-type plastic N20 motor holder                                                           | 2            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|         | Acrylic panel (3PCS) eco-friendly thickness 3MM                                                 | 1            | ![30](media/f2d90ae82041b79b1bfe3463ee1a5663.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|         | Black-yellow Handle 3\*40MM cross screwdriver                                                   | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | USB cable AM/BM transparent blue OD:5.0 L=1m                                                    | 1            | ![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|         | W420 Ball Caster Wheel  (Ball Diameter 15MM; Holder Material: Nylon)                            | 1            |  ![ks0313 caster](media/8a4ef6af26a4199d1f6c460bbf209c70.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|         | keyestudio White LED Module                                                                     | 1            | ![KS0016 Keyestudio 白色LED模块 (4)](media/af6eec7b8b49f2c114b629259745eca0.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|         | 3Pin female header jumper wire length 20CM 2.54mm                                               | 1            | ![222](media/971945ffddb513d8b27be2dabe6d41b3.jpeg)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|         | 100mm Nylon cable ties                                                                          | 6            | ![](media/2be12f0ee3d4ff81f9217ee0fbfb79ef.png)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+# Software Introduction
+
+## Installing Arduino IDE
+
+When program the UNO R3 development board, you can download the Arduino
+integrated development environment from the link:
+[https://www.arduino.cc/en/Main/OldSoftwareReleases\#1.5.x](https://www.arduino.cc/en/Main/OldSoftwareReleases#1.5.x)
+
+See more contents at: <https://wiki.keyestudio.com/How_to_Download_Arduino_IDE>
+
+<https://wiki.keyestudio.com/Getting_Started_with_Arduino>
+
+Or you can browse the KEYESTUDIO WIKI website at this link,
+<https://www.keyestudio.com/>
+
+![](media/af7d3d7875e9faca1ca6418f5eca43ed.png)
+
+## Introduction for Mixly Blocks
+
+Mixly is a free open-source graphical Arduino programming software, based on
+Google’s Blockly graphical programming framework, and developed by Mixly Team@
+BNU.
+
+It is a free open-source graphical programming tool for creative electronic
+development; a complete support ecosystem for creative e-education; a stage for
+maker educators to realize their dreams.
+
+![mixly-icon](media/1cb6ac9dd7f310eff82538fcca67c517.png)More info please check
+the link to download the Mixly blocks software.
+
+-   <https://wiki.keyestudio.com/Getting_Started_with_Mixly>
+
+-   <https://wiki.keyestudio.com/Download_Mixly_Software>
+
+-   <https://wiki.keyestudio.com/How_to_Import_Mixly_Library>
+
+Before starting the below projects, please click the link to get the basic
+understanding of Mixly software.
+
+## Importing Robot Library
+
+For the robot kit, we have developed keyestudio robot car library. Don’t forget
+to import the keyestudio desktop car library to Mixly software before coding the
+robot projects.
+
+Must import the robot car library first, or else you can’t check all the test
+code.
+
+![](media/222d47dbf06a452e10830ece4b130715.png)
+
+Unzip the desktop_car library package, you can see the **desktop_car
+XML.document**.
+
+![](media/54b354016b3014a7ef5ec9511f9c2e60.png)
+
+Then import this document into Mixly library. Import custom library
+successfully!
+
+![](media/6251e6e9d0068c08776062d826cc1be2.png)
+
+You are able to click “Manager” to manage all imported libraries. Note:
+sometimes it may exists a conflict between libraries, so should keep only
+correct car library when using and delete other library.
+
+![](media/6014793b48d78dc78461bf29fca0d7c9.png)
+
+# Projects Guide
+
+## Project 1: UNO R3 Built-in LED
+
+The UNO R3 development board is the most popular one in Arduino board series. In
+addition, it is also the best choice for beginners to learn to build electronic
+circuits and write the source code.
+
+![KS0470-1-1(2)](media/d280184b4900c370a6e6929cc67e7847.jpeg)If this is your
+first experience tinkering with the platform, the UNO R3 is the most robust
+board you can start playing with.
+
+Let's take a look at the details of this development board with the following
+chart:
+
+![KS0341 引脚标图](media/709d9ef695f98e63ee0501030b455a69.jpeg)
+
+|   ![](media/3bb1c25abe86a3f60ac7be228eee073a.png) | **ICSP (In-Circuit Serial Programming) Header** In most case, ICSP is the AVR, an Arduino micro-program header consisting of MOSI, MISO, SCK, RESET, VCC, and GND. It is often called the SPI (serial peripheral interface) and can be considered an "extension" of the output. In fact, slave the output devices under the SPI bus host. When connecting to PC, program the firmware to ATMEGA328P-PU.                         |
+|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![](media/90474bf3195205c042f837d56f7f5bc3.png)   | **Power LED Indicator** Powering the Arduino, LED on means that your circuit board is correctly powered on. If LED is off, connection is wrong.                                                                                                                                                                                                                                                                                 |
+| ![](media/90a9ee4c95ce2062a0aba4ea4e6a966c.png)   | **Digital I/O** Keyestudio UNO R3 (Black) Main Control Board has 14 digital input/output pins (of which 6 can be used as PWM outputs). These pins can be configured as digital input pin to read the logic value (0 or 1). Or used as digital output pin to drive different modules like LED, relay, etc. The pin labeled “〜” can be used to generate PWM.                                                                     |
+| ![](media/9692086f6c487165f7745faae51ef11f.png)   | **GND ( Ground pin headers)** Used for circuit ground                                                                                                                                                                                                                                                                                                                                                                           |
+| ![](media/f4f88bf6bbad85b84c2c9ed66b358042.png)   | **AREF**  Reference voltage (0-5V) for analog inputs. Used with [analogReference()](https://www.arduino.cc/reference/en/language/functions/analog-io/analogreference/).                                                                                                                                                                                                                                                         |
+| ![](media/e1e2b5ea7dc64f0d3718d686f1900b00.png)   | **SDA** IIC communication pin                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ![](media/2111adc0fbd7859beb30059380236465.png)   | **SCL** IIC communication pin                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ![](media/9de1b27e2187eac0f881adec62fba633.png)   | **ICSP (In-Circuit Serial Programming) Header** In most case, ICSP is the AVR, an Arduino micro-program header consisting of MOSI, MISO, SCK, RESET, VCC, and GND. Connected to ATMEGA 16U2-MU. When connecting to PC, program the firmware to ATMEGA 16U2-MU.                                                                                                                                                                  |
+| ![](media/2b17b0cf84a31ccc02181c4f4f98f297.png)   | **RESET Button** You can reset your Keyestudio UNO R3 (Black) Main Control Board, for example, start the program from the initial status. You can use the RESET button.                                                                                                                                                                                                                                                         |
+| ![](media/7f07f9d662bafeaae657330c523601b6.png)   | **D13 LED**  There is a built-in LED driven by digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.                                                                                                                                                                                                                                                                                        |
+|  ![](media/298bdd01b65872b389f57bfc11c26905.png)  | **USB Connection** Keyestudio UNO R3 (Black) Main Control Board can be powered via USB connector. All you needed to do is connecting the USB port to PC using a USB cable.                                                                                                                                                                                                                                                      |
+| ![](media/f0471c9f339df5933afe68e6daa0853b.png)   | **ATMEGA 16U2-MU**  USB to serial chip, can convert the USB signal into serial port signal.                                                                                                                                                                                                                                                                                                                                     |
+|  ![](media/aa9a27dba1b083f18f7251deeab2839b.png)  | **TX LED** Onboard you can find the label: TX (transmit) When Keyestudio UNO R3 (Black) Main Control Board communicates via serial port, send the message, TX led flashes.                                                                                                                                                                                                                                                      |
+| ![](media/595d159e619fce1eb4e3d31d57439ef3.png)   | **RX LED** Onboard you can find the label: RX(receive ) When Keyestudio UNO R3 (Black) Main Control Board communicates via serial port, receive the message, RX led flashes.                                                                                                                                                                                                                                                    |
+| ![](media/bdd3025540a33f0a9dd6205bf375a603.png)   | **Crystal Oscillator** How does Arduino calculate time? by using a crystal oscillator. The number printed on the top of the Arduino crystal is 16.000H9H. It tells us that the frequency is 16,000,000 Hertz or 16MHz.                                                                                                                                                                                                          |
+| ![](media/ee8c12ee2e2a4bba0a07339c335e07c9.png)   | **Voltage Regulator** Convert an external input DC7-12V voltage into DC 5V, then switch DC 5V to the processor and other components. Output DC 5V, the drive current is 2A.                                                                                                                                                                                                                                                     |
+| ![](media/36ac45df4db3ae6ea2ec409c26177c68.png)   | **DC Power Jack** Keyestudio UNO R3 (Black) Main Control Board can be supplied with an external power DC7-12V from the DC power jack.                                                                                                                                                                                                                                                                                           |
+| ![](media/f005354fbb7cc7a7f74c84f2b4d32aa3.png)   | **IOREF**  Used to configure the operating voltage of microcontrollers. Use it less.                                                                                                                                                                                                                                                                                                                                            |
+| ![](media/ca4ffeaccf51ddc9148844b0a0b785c0.png)   | **RESET Header**  Connect an external button to reset the board. The function is the same as reset button (labeled 9)                                                                                                                                                                                                                                                                                                           |
+| ![](media/acd4248a7de9ea9001fff564675b0f17.png)   | **Power Pin 3V3** A 3.3 volt supply generated by the on-board regulator. Maximum current draw is 50 mA.                                                                                                                                                                                                                                                                                                                         |
+| ![](media/0ed701382f464cb6943b88ad111f8af1.png)   | **Power Pin 5V** Provides 5V output voltage                                                                                                                                                                                                                                                                                                                                                                                     |
+| ![](media/70983783eac48007fb2b60d204a5febc.png)   | **Vin**  You can supply an external power input DC7-12V through this pin to Keyestudio UNO R3 (Black) Main Control Board.                                                                                                                                                                                                                                                                                                       |
+|   ![](media/ec24832167fa80b09cf01c8c4c9be5a2.png) | **Analog Pins** Keyestudio UNO R3 (Black) Main Control Board has 6 analog inputs, labeled A0 through A5.  These pins can read the signal from analog sensors (such as humidity sensor or temperature sensor), and convert it into the digital value that can read by microcontrollers) Can also used as digital pins, A0=D14, A1=D15, A2=D16, A3=D17, A4=D18, A5=D19.                                                           |
+|   ![](media/ba0adaf292c71dd1a69521743a7f961e.png) | **Microcontroller**  Each Keyestudio REV4 (Black) Main Control Board has its own microcontroller. You can regard it as the brain of your board. The main IC (integrated circuit) on the Arduino is slightly different from the panel pair. Microcontrollers are usually from ATMEL. Before you load a new program on the Arduino IDE, you must know what IC is on your board. This information can be checked at the top of IC. |
+
+**Let’s make a simple test for the UNO R3 built-in LED (D13).**
+
+It’s pretty simple to turn a built-in led on and off. We only require UNO R3
+control board and a USB cable to enter the wonderful programming world.
+
+Connect your UNO R3 board to the computer’s USB port using a USB cable for
+communication.
+
+![IMG_256](media/e67a4efbd94cc6267e08ee54e672ffe6.png)
+
+**Test Code:**
+
+Open Mixly blocks platform to get started with coding.   
+First, click **IN/OUT**, drag the **“DigitalWrite PIN\# (0)Stat(HIGH)”** block. 
+
+![](media/73b3ead0c038caa757b1bfc5cc7c73d7.png)  
+This block is used to set the level HIGH or LOW of Digital pin.   
+Select HIGH is to set the HIGH level.
+
+Select LOW is to set the LOW level.
+
+The HIGH level is the state of high voltage, generally recorded as 1.
+
+High voltage, high current, the LED lights.   
+The LOW level is the state of low voltage, generally recorded as 0.   
+Low voltage, low current, the LED Not lights.
+
+To observe the LED blink obviously, we need to add a Delay block.
+
+Check the test code below and upload it to your UNO R3 board.
+
+![](media/0e282cc26cbe46e73a70b8688900081a.png)
+
+**What you should see**
+
+Drag the test code to Mixly window; remember to select the proper board and COM
+port. Then compile and upload the code to your control board. Upload success
+message will appear on the bottom bar.
+
+The UNO R3 built-in LED (label “L”) will turn on for 1 second, and then turn off
+for 1 second, alternately and circularly.
+
+![](media/8ccfda1aa9df41f3c24c3571c055c7ba.png)
+
+![KS0341 sy](media/40db22583d754c2f2e23fc88d599daf9.jpeg)
+
+## Project 2: LED Blink
+
+**Overview:**
+
+LED blink is one of the most basic experiments in learning programming.
+
+This project we use keyestudio white LED module. You will learn first how to
+blink an LED.
+
+![KS0016 Keyestudio 白色LED模块
+(4)](media/af6eec7b8b49f2c114b629259745eca0.jpeg)
+
+There are three lead-out pins on the module, respectively negative pin(marked
+\-), positive pin(marked +) and signal pin(marked S).
+
+Separately connect the white LED module to the pin G, 5V and D3 of keyestudio
+motor drive shield V2 using three F-F jumper wires. Then stack the motor drive
+shield V2 onto the UNO R3 control board.
+
+![2.1](media/e3f6f979cfbef2c15fc673a3414966bd.png)
+
+**Note:** stack the motor drive shield on the UNO R3 board; connect white LED
+module to motor drive shield (pin G for GND, V for 5V, S for digital pin3 (S)).
+Connect the power to BAT connector.
+
+Done wiring, upload the test code to the board, so as to turn on an LED light.
+
+**Test Code:**
+
+Now write the program to make the white LED flash.
+
+Go to click library**“Desktop_Car_V3”**, drag out the
+block![](media/9d616c7e4b9f6f624839259df6ff310f.png), this block is used to set
+the HIGH/LOW for digital port;
+
+Click the drop-drown triangle icon to select HIGH for digital pin, with voltage;
+select LOW for digital pin, with no voltage.
+
+So what should we set the white LED pin output HIGH or LOW to turn on the LED?
+Through testing, set to HIGH, white LED turns on; set to LOW, white LED turns
+off.
+
+And go to**“Control”**, drag out the
+block![](media/29e41deec506c5e85129506ccb11d02d.png)to add a delay time.
+
+Duplicate this code string![](media/0fead3f93cca7852aad34c1b5373b228.png)once
+and change to LOW.
+
+We turn on the white LED for one second then off for one second.
+
+![](media/5142358374825a338031689981a181a6.png)
+
+**Note:** uploading the test code, DO NOT connect the Bluetooth module to motor
+drive shield. Otherwise, code upload fails.
+
+**Result:**
+
+Done uploading the code, turn the slide switch ON.
+
+You will see the LED module turn on for one second, then off for one second.
+
+![IMG_20190627_093123](media/aefd5e49a65f0405553d08200aef027c.jpeg)
+
+**Little Knowledge:**
+
+1.  In the code, we’ve set the LED signal pin to D3 in the library; we can set
+    the led signal pin without using library. The
+    block![](media/9d616c7e4b9f6f624839259df6ff310f.png)from
+    library“Desktop_Car_V3”is used to set the HIGH/LOW for digital port; Click
+    the drop-drown triangle icon to select HIGH for digital pin, with voltage;
+    select LOW for digital pin, with no voltage.
+
+Besides, To make the same effect, you can use the
+block![](media/f16eb589a5c03110f395e7a3f3b5019e.png)from “In/Out”. change the
+pin0 to pin3.
+
+So you can see the same final effect using the
+block![](media/80108d55b9913878c959f2abb72e7aa2.png)or
+![](media/9d616c7e4b9f6f624839259df6ff310f.png).
+
+1.  What happens when you change the number in one or both of the delay(1000)
+    ![](media/88dd1f316a81b4fa1114215ca93d63b9.png)
+
+This delay period is in milliseconds, so if you want the LED to blink as low or
+fast, change the value, try 500 or 2000.
+
+**Extension Practice:**
+
+Try making the LED blink without using library. Set the LED signal to D11, and
+turn on for 0.5 second; off for 0.2 second, alternately and circularly.
+
+![](media/d47acaf8459d7c22eaa5e22ad4ef4372.png)
+
+## Project 3: Obstacles Detection
+
+**Overview:**
+
+The robot car kit is packed with 2 infrared obstacle detector sensors.
+
+![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)The infrared obstacle
+detector sensor is actually a distance-adjustable obstacle avoidance sensor
+designed for a wheeled robot.
+
+It has a pair of infrared transmitting and receiving tubes. The transmitter
+emits an infrared rays of a certain frequency. When the detection direction
+encounters an obstacle (reflecting surface), the infrared rays are reflected
+back, and receiving tube will receive it. At this time, the indicator lights up.
+After processed by the circuit, the signal output terminal will output Digital
+signal.
+
+You can rotate the potentiometer knob on the sensor to adjust the detection
+distance. The effective distance is 2-40cm and the working voltage is 3.3V-5V.
+
+![避障](media/518941f406ac9e92311cdda653600d8c.png)
+
+**TECH SPECS:**
+
+-   Operating Voltage: DC 3.3-5V
+
+-   Detection Distance: 2-40cm
+
+-   Interface: 3PIN
+
+-   Output Signal: Digital signal
+
+In this project, we read the signal level of obstacle detector sensor to judge
+whether detect obstacles or not.
+
+When detects an obstacle, sensor’s signal pin outputs LOW (display 0);
+otherwise, output HIGH (display 1).
+
+Show the result on the serial monitor, and control the external LED module turn
+ON/OFF.
+
+**Wiring Diagram:**
+
+Connect two infrared obstacle detector modules and an LED module to keyestudio
+motor drive shield V2.
+
+![2.2](media/bd859aaf7ed42dd9319734a12b769e54.png)
+
+**Note:** stack the motor drive shield onto UNO R3 control board. connect the
+left obstacle detector sensor to P3（G、V、A0) connector on the motor drive
+shield; the right obstacle detector sensor to P5（G、V、A2) connector. If the
+digital ports are not enough, analog port can be used as digital port. Analog
+port A0 corresponds to digital port14; A1 corresponds to digital port15.
+
+The white LED module is connected to motor drive shield; pin G for GND, V for
+5V, S for digital pin3 (S). Connect the power to BAT connector.
+
+**Test Code:**
+
+We have connected well the both obstacle detector sensors, white LED module and
+power supply. Now write the program to test the left and the right obstacle
+detector sensor.
+
+Go to **“Control”**, drag out the **“setup”** block; and drag the **“Serial baud
+rate(9600)”** block from **“SerialPort”** into the **“setup”** block.
+
+To read the measured signal info by both obstacle detector sensors, we click the
+**“SerialPort”** , drag out the block
+![](media/cfeb0a2c3b4d7446c824cca64af524de.png); drag out the
+block![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)from **“Text”** into the
+block![](media/cfeb0a2c3b4d7446c824cca64af524de.png), and then duplicate the
+complete block three times. Change the
+first![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)to “left_sensor”; drag out
+the block ![](media/530b296bc7665e516242f679fd97c8b0.png)from
+library**“Desktop_Car_V3”**to replace the
+second![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png); delete the third hello
+box, forming a blank box; Change the
+fourth![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)to “right_sensor”.
+
+And again go to **“SerialPort”**, drag out the
+block![](media/618c9a02e5df5e9e352d71cfd7cc018b.png); duplicate the
+block![](media/530b296bc7665e516242f679fd97c8b0.png)once and drag it into
+![](media/618c9a02e5df5e9e352d71cfd7cc018b.png), click the drop-down triangle
+icon to select the “right_infrared_avoid”
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time in
+500ms.
+
+![](media/f4fa1818d448c4fd4e61b60df3610a27.png)
+
+Upload the above code to see the effect. Powered on, the Pled LED on the
+obstacle detector sensor turns on. Through testing, if detected obstacle,
+obstacle detector sensor outputs LOW 0 and the built-in Sled LED turns on red;
+no obstacle, the sensor outputs HIGH 1 and the built-in Sled LED is off.
+
+We’ve measured what signal the left and the right obstacle detector sensor send.
+Next the white LED module is turned on when any obstacle detector sensor detects
+an obstacle.
+
+Next write the program that can turn on or off white LED module using the left
+and the right obstacle detector sensor.
+
+Here we can use the condition
+statement![](media/8349bbb9276453f897c515b0852df94a.png)or
+![](media/80341defb6a4352c57767dbafe48f1d4.png). But the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png) is
+[more](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;)
+[efficient](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;) than
+![](media/537643f5a9dbb4de231a4f85ecb31e58.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block ![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png), and drag out the
+block![](media/530b296bc7665e516242f679fd97c8b0.png) from
+the**“Desktop_Car_V3”**into the first input box at the left side of “**=**”;
+drag the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into
+the second input box at the right side of “**=**” ; like
+this:![](media/9fb64be14398a5e76a48e6524df865a5.png).
+
+We duplicate the block once and click the drop-down triangle icon to select the
+“right_infrared_avoid”. ![](media/faef34222e21a3905bbf410116b6f218.png)
+
+And again go to the **“Logic”**, drag out the
+block![](media/c400068e89cf5f4031bbffe808916f26.png)behind if statement; click
+the drop-down triangle icon to select “or”. then drag the
+block![](media/9fb64be14398a5e76a48e6524df865a5.png)and![](media/faef34222e21a3905bbf410116b6f218.png)
+into the input box of block![](media/c400068e89cf5f4031bbffe808916f26.png).
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/606ec4378f196cb546b65fe65442ddc5.png) into **do** statement, keep
+HIGH; duplicate the block once and set to **LOW** and drag it into **else**
+statement.
+
+![](media/8550ba103ee071af9c68cec464b1712f.png)
+
+Now we have written the code and upload it to see the final result!
+
+![](media/3b7b74b26839d1a6586f901e4e682de2.png)
+
+**Special note:**
+
+You can turn the tirmpot on the obstacle detector sensor to adjust the inductive
+sensitivity.
+
+Rotate the potentiometer near the infrared emitter to the end clockwise, then
+adjust the potentiometer near the infrared receiver to observe the Sled light,
+turn the Sled light off, and keep the critical point to be lit. The sensitivity
+is the best.
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to computer’s USB port with USB
+cable to upload the code.
+
+Code upload success, open the serial monitor, and set the baud rate to 9600. We
+can see the HIGH or LOW level of signal pin of left and right sensors. As shown
+below.
+
+When any sensor detects obstacle (output 0), external LED module will turn on;
+otherwise, LED turns off.
+
+![](media/f8763b72a954d349880630a7e9fe5580.png)
+
+**Little Knowledge:**
+
+1.  In the code, we use the
+    library![](media/8c455ca5da9356f766e7e69295fab9b1.png) to read the HIGH/LOW
+    of the left infrared avoiding sensor (A0); using the block
+    ![](media/03b12fb17dfd268b28f875d7e5a4e37d.png)also makes sense.
+
+The signal pin of the right infrared avoiding sensor is A2.
+
+1.  ![](media/65e81731b6d1141f9b3f09325fdac1ac.png) means the baud rate is set
+    to 9600;   
+    ![](media/62da713eff304ef8dfaf29975ed574da.png) Print the specified number,
+    text or other value on serial monitor.  
+    ![](media/dca1681f9aae9e7a9ae1530e7aa438d9.png) Print the specified number,
+    text or other value on newline of monitor.
+
+2.  ![](media/841ce70e1ca304bb65927939b62baed6.png) means that if condition 1 is
+    satisfied, it's going to be A, otherwise it's going to be B.
+
+When using, you can find the **if...do...**statement block in the Mixly Control
+Block. Then click the gear icon on the block to drag out the **else** or **else
+if** block you need to use.
+
+![](media/36d9be34ee0a93a3584208b839e72b35.png)
+
+1.  ![](media/22e63880927ee82b4619106a0ca2158a.png)This is a logical statement.
+    It’s available as long as can satisfy any one of the two conditions.
+
+**Extension Practice:**
+
+1.  Change the test code without using the library, making the same function.
+
+![](media/cce43b8338b0c8c00c5afac89e73cb33.png)
+
+## Project 4: Playing Melody
+
+**Overview:**
+
+The keyestudio power amplifier module integrates an adjustable potentiometer, a
+passive buzzer speaker, an audio amplifier 8002B chip and 3pin header interface.
+
+When testing, we can input square waves of different frequency at the signal pin
+to make passive buzzer speaker produce a sound.
+
+![KS0374 (5)](media/dc2fb81869f8b166a5f608afca62f0ff.jpeg)We can turn the
+potentiometer to adjust the sound amplification, that is, to adjust the sound
+volume.
+
+In this project, we will code the buzzer in power amplifier module to produce a
+tone. And if string a bunch of tones together, you’ve got music!
+
+**Note:** stack the motor drive shield onto UNO R3 control board; connect the
+pin (G、V、S) of power amplifier module to the pin G, 5V, D11 of motor drive
+shield V2 with 3P female-to-female jumper wire. Connect the power supply to BAT
+connector.  
+![2.3](media/9efdf9c4558670657fc9891b95f31b1f.png)
+
+**Coding:**
+
+Write the program that can make the power amplifier module play a tone.
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/c1dd8b37c73d646b7b35b579aaebc7a2.png)，click the drop-down
+triangle icon behind frequency; you’ll see a series of pitch name in English
+letters and Numbers. You can choose different pitch name to set different
+frequency.
+
+1（Do）、2(Re)、3(Mi)、4(Fa)、5(Sol)、6(La)、7(Si) are the roll-call in music.
+They correspond to NOTE C、NOTE D、NOTE E、NOTE F、NOTE G、NOTE A、NOTE B in the
+frequency drop-down list.
+
+From 1（Do）to 7（Si）, that is from C to B. As the below table shown. The
+pitch/tone is getting higher and higher.
+
+| 1(Do)  | 2(Re)  | 3(Mi)  | 4(Fa)  | 5(Sol) | 6(La)  | 7(Si)  |
+|--------|--------|--------|--------|--------|--------|--------|
+| NOTE_C | NOTE_D | NOTE_E | NOTE_F | NOTE_G | NOTE_A | NOTE_B |
+
+![](media/80b68a88690d69d692250b9c9e274692.png)
+
+Music requires tones as well as beats. The duration of each note, is the beat.
+We can use Delay block to set the beats. The larger the value, the longer the
+delay time is.
+
+Click the drop-down triangle icon on the
+block![](media/ce19fa20f242ddd6c6c7f95171faccaf.png) to select the frequency
+**NOTE_A4**.
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time 200ms.
+
+Click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/cdaf7e2511f1374c233f8e0c0fede618.png), and delay 200ms.
+
+Copy the above string and change the last delay from 200 milliseconds to 1000
+milliseconds.
+
+Upload the complete code to see what will happen.
+
+**Code 1: play a tone**
+
+![](media/de7bf896f30446afe9cea21e9a2f788b.png)
+
+**Code 2: do re mi fa so la si do**
+
+We have introduced the knowledge of power amplifier module and tone play. Now
+write the program for the buzzer playing tune “do re mi fa so la si do”.
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/ce19fa20f242ddd6c6c7f95171faccaf.png)，click the drop-down
+triangle icon to select the frequency **NOTE_C4**.
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time 300ms.
+
+Duplicate the above code string seven times and click the drop-down triangle
+icon to separately select the frequency
+**NOTE_D4、NOTE_E4、NOTE_F4、NOTE_G4、NOTE_A4、NOTE_B4、NOTE_C5**. Keep the
+delay time 300ms.
+
+![](media/8172b91ab99f85358547e3134e152897.png)Click the imported
+library**“Desktop_Car_V3”**, drag out the
+block![](media/cdaf7e2511f1374c233f8e0c0fede618.png), and duplicate a delay
+block once and set to 2000ms.
+
+**Code 3: Ode to Joy**
+
+How to use the power amplifier module to play a song of Ode to Joy? Next we
+write the program to make the buzzer play the song of Ode to Joy.
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/e1bcf519f796059970011c4261dfcc5c.png)，click the drop-down
+triangle icon to select the song **Ode_to_Joy**. Then drag out the
+block![](media/366c097bb0f4fefb37eb4e7b8c337702.png)to switch off the sound.
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time 3000ms.
+
+![](media/a6a2aad9cab8ee30e1758bba55989b94.png)
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to computer’s USB port with USB
+cable to upload the code. Then turn the slide switch ON.
+
+Upload code 1, buzzer will produce a tone of 440Hz for 0.2 second then off for
+0.2 second, circularly.
+
+Upload code 2, buzzer will play a tune “do re mi fa so la si do” circularly.
+
+Upload code 3, buzzer will play a song Ode To Joy circularly.
+
+![](media/cc68303136f90afa7b5c6b9e393aef52.png)
+
+Remember that you can turn the potentiometer to adjust the sound volume if can’t
+hear the tone.
+
+**![00](media/d8baf886c43827a821cd2eaa7c7d55b9.jpeg)  
+**
+
+**Little Knowledge:**
+
+1.  In the code 1, we use the
+    library![](media/091afe7d4355379fe58bc8ef716a4a67.png), the signal pin of
+    passive buzzer module is connected to D11, with a frequency of 440Hz tone.
+
+Note that you can click the Code on the Mixly window to check out the Arduino
+code.
+
+![](media/ce91b7de890fb548a18bf19db6c43c14.png)
+
+1.  In the code 1, ![](media/a3e89239228a5fd878b9b2b79ad19790.png), means the
+    buzzer will make no tone.
+
+2.  In the code 2, we set the buzzer can play different tones of different
+    frequencies.
+
+3.  In the code 3, ![](media/d19f61b4d6f1e94e0789ef45e61bcbff.png)means the
+    buzzer will play a specific song. You can choose the tune Ode to Joy, or
+    Birthday.  
+    ![](media/5c7f516f4354fe2ea98b1aba8b529330.png)
+
+**Extension Practice:**
+
+1.  For code 3, you can click to check out the corresponding language C; find
+    out the tone of corresponding frequency and duration time, then refer to the
+    code 2, try write into your own code.   
+    ![](media/677fafae39c6f2b2469d08f5ea01d3dc.png)
+
+**Tips:**
+
+![](media/8f175fe0fd92e585e226a36b41c64263.png) set the frequency;
+![](media/f7e196a4ab5b2e24675741839b9d903a.png) set a period of time;
+
+![](media/27c688ef6cd34a79027cd9ff003b891c.png)The corresponding frequency of
+the first M3 is 658Hz; and the duration time is 300\*1=300ms. The rest is in the
+same manner.
+
+## Project 5: Obstacles Alarm
+
+**Overview:**
+
+The ultrasonic module will emit the ultrasonic waves after trigger signal. When
+the ultrasonic waves encounter the object and are reflected back, the module
+outputs an echo signal, so it can determine the distance of object from the time
+difference between trigger signal and echo signal.
+
+![SR04-](media/0565180e37f2324b5818928b792aa7ed.png)The ultrasonic module is
+commonly used in robot car DIY process. It can detect whether an obstacle ahead
+and we can measure the distance between ultrasonic sensor and obstacles by
+calculation.
+
+When DIY smart car, we can use the measured distance data to program the robot
+car avoiding or following obstacles.
+
+In this project, we are going to measure the distance between ultrasonic module
+and obstacles ahead, triggering the power amplifier module to make a sound.
+
+When the measured distance between ultrasonic and obstacles ahead is less than
+10cm, the speaker will produce a tone of 440Hz; otherwise, not sound.
+
+![IMG_20180625_110524](media/5cb9599f78ab5db0b586404b6e76c7b4.jpeg)**TECH
+SPECS:**
+
+-   Operating Voltage: DC 5V
+
+-   Operating Current: 15mA
+
+-   Operating Frequency: 40khz
+
+-   Maximum Range: 2-3m
+
+-   Minimum Range: 2m
+
+-   Sensing Angle: 15 degrees
+
+-   Trigger Input Signal: 10µS TTL pulse
+
+**Wiring Diagram:**
+
+![](media/917b8e372a8d67514c7be57e2f4d03ee.png)
+
+**Test Code:**
+
+The ultrasonic sensor is connected to P2 connector of motor drive shield , VCC
+pin to V, Trig pin to digital 13 (S), Echo pin to digital 12 (S), G pin to
+GND(G); Trig pin is to trigger signal and Echo pin is to receive echo signal.
+
+Next need to write the program to get the specific distance measured by
+ultrasonic sensor.
+
+Go to **“Control”**, drag out the **“setup”**
+block![](media/1a736fdf878944f02c201bbceaa718ab.png);
+
+Drag out the block![](media/f3a4ef2aebbe3a4aae13396e61b7ccc7.png)from
+**“SerialPort”** into the **“setup”** block.
+
+Go to the **“SerialPort”** again, drag out the
+block![IMG_256](media/e6c8776c1e2975da9f4846832719e872.png)and
+![IMG_257](media/1169538edc0dc6b410f7c84e34bb0284.png)
+
+Go to **“Text”**, drag out the
+block![](media/031c6484aa47302eed4e0a5aa871873e.png) into the
+block![IMG_256](media/e6c8776c1e2975da9f4846832719e872.png), and change the word
+“hello” to **“distance=”**.
+
+Then go to**“Desktop_Car_V3”**, drag and drop the ultrasonic
+block![](media/a358d8049d768e1a4d922dbfa6c2aad1.png) into **“Serial printIn”**
+block. To make the value print slowly, we add a delay block.
+
+And again go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time in
+500ms.
+
+Upload the code success, open the serial monitor to check the distance between
+ultrasonic sensor and an obstacle.
+
+![](media/d1e7093c73c1b2e04839e470eb20341d.png)
+
+In the following, try to realize another two distance situations:
+
+When the measured distance between the ultrasonic sensor and front obstacles is
+smaller than 10cm, power amplifier module plays sound.
+
+When the measured distance between the ultrasonic sensor and front obstacles is
+greater than 10cm, power amplifier module no sound.
+
+To judge whether the distance is smaller than 10cm or greater than 10cm, here we
+can use the condition statement![](media/8349bbb9276453f897c515b0852df94a.png)or
+![](media/80341defb6a4352c57767dbafe48f1d4.png). But the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png) is
+[more](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;)
+[efficient](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;) than
+![](media/537643f5a9dbb4de231a4f85ecb31e58.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png)into the **if** statement,
+and drag out the block![](media/a358d8049d768e1a4d922dbfa6c2aad1.png)from
+the**“Desktop_Car_V3”**into the first input box at the left side of “**=**”;
+drag the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into
+the second input box at the right side of “**=**” ; change the“**=**” to“**＜**”
+, change the value 0 to 10; like
+this:![](media/6df6bd41dc9da4896e4228aaafd4227a.png).
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/ce19fa20f242ddd6c6c7f95171faccaf.png)into the **do**
+statement，click the drop-down triangle icon to select the frequency
+**NOTE_A4**.
+
+Then drag out the block![](media/366c097bb0f4fefb37eb4e7b8c337702.png)into the
+**else** statement to switch off the sound.
+
+![](media/f9d32337fbc4f607067592f88caf3001.png)
+
+Okay. Now we have written the complete code for ultrasonic sensor and power
+amplifier module. Upload the code.
+
+![](media/aaafe95150954f9d9fa06892a7443274.png)
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to computer’s USB port with USB
+cable to upload the code.
+
+![](media/6d890b6faa89eb3b1ac28e1f0ef6f2ed.png)Code upload success, open the
+serial monitor, and set the baud rate to 9600. You can see the distance between
+ultrasonic and obstacle ahead, with a unit of cm.
+
+When the measured distance between ultrasonic and obstacles ahead is less than
+10cm, the speaker will produce a tone of 440Hz; otherwise, not sound.
+
+**Little Knowledge:**
+
+1.  In the code, we use the![](media/f07183fb2700f489a4975674da76417f.png) to
+    measure the distance between ultrasonic sensor and obstacle ahead, with a
+    unit of cm.
+
+2.  ![](media/65e81731b6d1141f9b3f09325fdac1ac.png) means the baud rate is set
+    to 9600;   
+    ![](media/101cc98a704c2b918cdb59192264758e.png): print the distance value on
+    the newline of monitor.   
+    But if you use the block ![](media/aa99ae7375117484fc5209440b095f0f.png), it
+    will not print the value on the newline; just print on the monitor. The
+    difference between them is whether need to make line wrap.
+
+3.  In the code also call the **if...do...**
+    statement![](media/841ce70e1ca304bb65927939b62baed6.png) Refer to the
+    detailed use in the project 3 please.  
+    ![](media/782a868cbaee91bf18c004802ff0abe9.png)
+
+**Extension Practice:**
+
+1.  You can reset the distance measured by ultrasonic sensor. Change the
+    different distance value to make the buzzer play a tone of different
+    frequency.
+
+## Project 6: Motor Driving and Speed Control
+
+**Overview:**
+
+![ks0435-5](media/d39ea0cd6054d5f772b249bc0fa88206.jpeg)There are many ways to
+drive the motor. Our robot uses the most commonly used L298P solution.
+
+L298P is an excellent high-power motor driver IC produced by STMicroelectronics.
+It can directly drive DC motors, two-phase and four-phase stepping motors. The
+driving current up to 2A, and output terminal of motor adopts eight high-speed
+Schottky diodes as protection.
+
+We have designed the motor driver shield V2 based on the L298P circuit.
+
+The stackable design can make it be plugged directly into the Arduino, reducing
+the technical difficulty of using and driving the motor.
+
+Direct stack the motor driver shield onto UNO R3 board, after the BAT is powered
+on, turn the Slide button ON, to supply the power for both keyestudio motor
+driver shield V2 and UNO R3 board.
+
+For simple wiring, the motor driver shield comes with anti-reverse interfaces.
+When connecting the motor, power supply and sensor modules, you just need to
+plug in directly.
+
+The Bluetooth interface on the motor driver shield is fully compatible with
+keyestudio HM-10 Bluetooth module. When connecting, just plug HM-10 Bluetooth
+module into the corresponding interface.
+
+At the same time, the motor drive shield has brought out extra digital and
+analog ports in 2.54mm pin headers, so that you can continue to add other
+sensors for experiments extension.
+
+The motor drive shield can access to 4 DC motors, defaulted by jumper
+connection. The motor connector A and A1, connector B and B1 are separately in
+parallel.
+
+The 8 jumpers can be applied to control the turning direction of 4 motors.
+
+For instance, if change the 2 jumpers near the motor A connector from horizontal
+connection to vertical connection, the turning direction of motor A is opposite
+to the original rotation direction.
+
+**![ks0435-3](media/c0c035f9846ea511403988197e9905bb.jpeg)**
+
+**Specifications:**
+
+1.  Logic part input voltage: DC5V
+
+2.  Driving part input voltage (limit): DC 6-18V
+
+3.  Driving part input voltage (recommended): DC 7-12V
+
+4.  Logic part working current: \<36mA
+
+5.  Driving part working current: \<2A
+
+6.  Maximum power dissipation: 25W (T=75℃)
+
+7.  Working temperature: -25℃～＋130℃
+
+**PINOUT Instructions:**
+
+![英](media/3c03aa5fded5214a4f284540b11f8931.png)
+
+**Wiring Diagram:**
+
+Connect two motors to keyestudio motor drive shield V2; stack the motor drive
+shield onto UNO R3 control board.
+
+**![2.5](media/6af9f01c80181af07cfd1e71a33bf852.png)**
+
+**Driving Motor**
+
+According to the wiring diagram, default the jumper connection method.
+
+Follow the table below to drive the 2 motors rotate by Digital, PWM pins, so as
+to control the robot car run.
+
+The PWM value is in the range of 0-255. The greater the value set, the faster
+the motors rotate.
+
+|                 | **D4** | **D5(PWM）** | **Motor B(left）** | **D2** | **D9(PWM）** | **Motor A(right）** |
+|-----------------|--------|--------------|--------------------|--------|--------------|---------------------|
+| Go forward      | HIGH   | 100          | Turn forward       | HIGH   | 100          | Turn forward        |
+| Go backward     | LOW    | 100          | Turn backward      | LOW    | 100          | Turn backward       |
+| Rotate to left  | LOW    | 100          | Turn backward      | HIGH   | 100          | Turn forward        |
+| Rotate to right | HIGH   | 100          | Turn forward       | LOW    | 100          | Turn backward       |
+| stop            | /      | 0            | stop               | /      | 0            | stop                |
+
+**  
+**
+
+**  
+Test Code: (without library)**
+
+Navigate the desktop Bluetooth car to turn forward for 2 seconds, backward for 2
+seconds, and then rotate to left for 2 seconds, rotate to right for 2 seconds,
+stop for 2 seconds.
+
+We go to write the code for motor A, B to turn front. Go to **“In/Out”**, drag
+out the
+block![](media/9eab1530ba9b3e19112700c7fdd531b8.png)and![](media/3c60b632b8e3ff6c0cc383055679f371.png);
+separately duplicate these two blocks, set to digital pin 4 and pin 2, change
+the analog pin 3 to digital pin 5 and 9. Pin 4 and pin 2 set to HIGH; pin 5 and
+pin 9 are PWM pin. The greater the PWM value, the faster the speed is. So here
+we assign both value to 100.
+
+Next go to drag out the block![](media/ccbd3fc6eec336d04c7e2ef583eedc40.png)
+from **“Control”**, and set to **2000ms**.
+
+![](media/55d13383931030e7f8d32c467a1b7d77.png)
+
+So now we complete the code for robot moving front for 2 seconds.
+
+Let’s move on to write the code for robot turning back, rotating to left,
+rotating to right and stop.
+
+Duplicate the finished code string three times;
+
+Set the pin 4 and pin 2 to LOW, assign both pin 5 and pin 9 to 100, so that the
+motor A, B will turn backward, thus the robot will turn back.
+
+![](media/a5a4424a5741c79466d8e87553b97f70.png)
+
+Set the pin 4 to LOW and pin 2 to HIGH, assign both pin 5 and pin 9 to 100, so
+that the motor A turns back and motor B turns front, thus the robot will rotate
+to left.
+
+![](media/d0f0e9b3f2bb7c50c5b1b651e6895362.png)
+
+Set the pin 4 to HIGH and pin 2 to LOW, assign both pin 5 and pin 9 to 100, so
+that the motor A turns front and motor B turns back, thus the robot will rotate
+to right.
+
+![](media/81fc6d993b1ad2fe5706188661cecb7f.png)
+
+Go to **“In/Out”** again, drag out the
+block![](media/3c60b632b8e3ff6c0cc383055679f371.png)and duplicate once, change
+the pin3 to ![](media/1336a23354d60acddc555fe3558cbc1c.png)pin 5 and pin 9,
+assign the value 0; then add a delay block 2000ms.
+
+Upload the complete code to see the desktop robot move.
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to
+
+computer’s USB port with USB cable to upload the code.
+
+![](media/21885849af608b65a0888d56bedead03.png)
+
+Upload success, turn the Slide switch ON. The 2 motors act like the smart car to
+turn forward for 2 seconds, backward for 2 seconds, rotate to left for 2
+seconds, rotate to right for 2 seconds, stop for 2 seconds, alternately and
+circularly.
+
+**![000](media/b0a5c7ba0b7504cb0e72dced6f48bdfd.jpeg)**
+
+**  
+Little Knowledge:**
+
+1.  The code logic is completely based on the motor driving reference table.
+    Check it out.
+
+2.  The PWM value is in the range of 0-255. The greater the value set, the
+    faster the motors rotate. Base on that, you can set the speed as you like.
+
+**Extension Practice:**
+
+1.  Based on the logic table, try to reset a new moving track for your smart
+    car.
+
+    Reference code:
+
+![](media/339b4c7b2a055049d09c2a869250c827.png)**  
+**
+
+## Project 7: Library Driving Motor
+
+**Overview:**
+
+There are many ways to drive the motor. We have learned how to control the 2
+motors in the previous section, so as to drive the smart car run. It is
+troublesome to control the smart car via control port. For this, we specially
+create the library to drive the robot car more simple and easier.
+
+When setting, the PWM value is in the range of 0-255. The greater the value
+settings, the faster the motors rotate.
+
+**Wiring Diagram:**
+
+**![2.5](media/6af9f01c80181af07cfd1e71a33bf852.png)**
+
+**Test Code: (with library)**
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/b5eed15b1f591d496218139ed5ca9475.png) and set to PWM100; so the
+robot will move front at a speed of PWM100.
+
+This block![](media/1c130dadb9f51baecd9d3755afbc49d6.png)has the same function
+as the string block![](media/6998ea82fc9942a5559ae86133f6d0c2.png) .
+
+Next go to drag out the block![](media/ccbd3fc6eec336d04c7e2ef583eedc40.png)
+from **“Control”**, and set to 2000ms.
+
+How to write the code for robot back and stop?
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/7f632a11caa61fb3c73d826739b192f9.png)and
+![](media/161ba46a2a685986b863250a5147e32d.png), set to PWM100; respectively add
+a delay block in 2000ms.
+
+Continue to write the program for robot, rotate to left for 2 seconds, rotate to
+right for 2 seconds, turn left for 2 seconds, turn right for 2 seconds, stop for
+2 seconds.
+
+Drag out the block![](media/5d3e78babf64361433ae692181b72646.png),
+![](media/92430f4b571f787575a24efcb41e4663.png),
+![](media/0ddbc229aa4981eb24358a2a784ddd12.png),
+![](media/9d9e92ff6adcf7dd7b770cc295de6636.png) and
+![](media/161ba46a2a685986b863250a5147e32d.png); set to PWM100 and respectively
+add a delay block, set to delay 2000ms.
+
+![](media/17145ba01a26b83c412fc2f9324393b1.png)
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to computer’s USB port with USB
+cable to upload the code.
+
+Upload success, turn the Slide switch ON. The 2 motors act like smart car to
+turn forward for 2 seconds, backward for 2 seconds, stop for 2 seconds, rotate
+to left for 2 seconds, rotate to right for 2 seconds, turn left for 2 seconds,
+turn right for 2 seconds, stop for 2 seconds, circularly.
+
+![](media/46decd8de4cc968a2044b4ef65a58e04.png)**  
+**
+
+**Little Knowledge:**
+
+1.  The code using library to set the car’s motion state, easy and simple,
+    shortening the code length.
+
+2.  The control logic is the same as project 6-motor driving. We can click to
+    check out the corresponding language C of motor mixly code.
+
+![](media/9cbfcd6ac888537398361e1be6b60aee.png)
+
+![](media/3de39a60973ec3e05b4e4b68c9707206.png)**Extension Practice:**
+
+1.  Based on the logic table, try to reset a
+
+    new moving track for your smart car.
+
+    (Reference program)
+
+## Project 8: Line Tracking Sensor
+
+**Overview:**
+
+The tracking sensor is actually an infrared sensor. The component used here is
+the TCRT5000 infrared tube. Its working principle is to use the different
+reflectivity of infrared light to the color, then convert the strength of the
+reflected signal into a current signal.
+
+**![ks0313-7(3](media/9b829e29cb49b4d7c0fd576504d714cb.png)**During the process
+of detection, black is active at HIGH level, but white is active at LOW. The
+detection height is 0-3 cm.
+
+For keyestudio 3-channel line tracking module, we have integrated 3 sets of
+TCRT5000 infrared tube on a single board. It is more convenient for wiring and
+control.
+
+By rotating the adjustable potentiometer on the sensor, it can adjust the
+detection sensitivity of the sensor.
+
+Special note: before testing, turn the potentiometer on the sensor to adjust the
+detection sensitivity. When adjust the LED front the trimpot at the threshold
+between ON and OFF, the sensitivity is the best.
+
+**TECH SPECS:**
+
+-   Operating Voltage: 3.3-5V (DC)
+
+-   Interface: 5PIN
+
+-   Output Signal: Digital signal
+
+-   Detection Height: 0-3 cm
+
+![02](media/dbe1ade8869a4aac87ba61b262950155.jpeg)
+
+**Wiring Diagram:**
+
+Next let’s do a simple test for this tracking module. The connection diagram is
+shown as below.
+
+![2.7](media/03bd0c3bab1b94169874ea190c935298.png)
+
+**Note:** stack the motor drive shield onto UNO R3 control board. connect the
+line tracking sensor to motor drive shield’s P1 connector (G, V, D6, D7, D8);
+
+Connect the pin (G、V、S) of white LED module to the pin G, 5V, D3(S) of motor
+drive shield with 3P female-to-female jumper wire. Connect the power supply to
+BAT connector.
+
+**Test Code:**
+
+Now write the program to test the line tracking sensor.
+
+Go to **“Control”**, drag out the **“setup”** block; and drag the **“Serial baud
+rate(9600)”** block from **“SerialPort”** into the **“setup”** block.
+
+To respectively read the left, the center and the right tracking sensor on the
+line tracking module, we click the **“SerialPort”** , drag out the
+block![](media/f5b5924bd15cdf2feb4bbad933d1003f.png); drag out the
+block![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)from **“Text”** into the
+block![](media/f5b5924bd15cdf2feb4bbad933d1003f.png), and then duplicate the
+complete block six times. Change the
+first![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)to “left_tracking=”; drag
+out the block![](media/5a78f4c0a67d0e40992022644723e7da.png)from
+library**“Desktop_Car_V3”**to replace the
+second![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png); delete the third hello
+box, forming a blank box; change the
+fourth![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)to “center_tracking=”.
+
+Duplicate the block![](media/5a78f4c0a67d0e40992022644723e7da.png)once to
+replace the fifth![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png) and click the
+drop-down triangle icon to select the “center_tracking”; delete the sixth hello
+box, forming a blank box; change the seventh
+![](media/f7dff47bf5f3f27bb3f522a30da3f1e6.png)to “right_tracking=”.
+
+And again go to **“SerialPort”**, drag out the
+block![](media/618c9a02e5df5e9e352d71cfd7cc018b.png); duplicate the
+block![](media/5a78f4c0a67d0e40992022644723e7da.png)once and drag it
+into![](media/618c9a02e5df5e9e352d71cfd7cc018b.png), click the drop-down
+triangle icon to select the “right_tracking”
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set to delay 1000ms.
+
+![](media/6c73344665904f8e8d72172b43453988.png)
+
+Complete and upload the above code to see the result. It can tell black and
+white.
+
+Through testing, if line tracking sensor detects white, output LOW 0 and the
+built-in LED turns on red; detecting black, output HIGH 1 and the built-in LED
+is off.
+
+We’ve measured what signal the line tracking sensor sends. Next the white LED is
+turned on when any tracking sensor detects white.
+
+Next write the program that can turn on or off white LED module using line
+tracking sensor.
+
+To judge whether the left, the center and the right tracking sensor detect black
+or white, here we can use the condition
+statement![](media/8349bbb9276453f897c515b0852df94a.png)or
+![](media/80341defb6a4352c57767dbafe48f1d4.png). But the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png) is
+[more](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;)
+[efficient](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;) than
+![](media/537643f5a9dbb4de231a4f85ecb31e58.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block ![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png), and drag out the
+block![](media/5a78f4c0a67d0e40992022644723e7da.png)from
+the**“Desktop_Car_V3”**into the first input box at the left side of “**=**”;
+drag the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into
+the second input box at the right side of “**=**” ; like
+this:![](media/e7d6e72f58f4c421bc754d96c970c088.png).
+
+We duplicate the block twice, and respectively click the drop-down triangle icon
+to select “center_tracking” and “right_tracking”.
+![](media/97390b5bd7b4792d48a7b95626381f23.png)
+![](media/4778a502c49e2b53681876b6fcdc2b8b.png)
+
+And again go to the **“Logic”**, drag out the
+block![](media/c400068e89cf5f4031bbffe808916f26.png)and click the drop-down
+triangle to select “or”; duplicate the
+block![](media/6ab464786e25660ad22450ee783d1279.png)once and make
+as![](media/614c0d26ae97f3d25099ae4819cdc4fe.png); drag this block behind into
+the **if** statement.
+
+Now respectively drag the
+block![](media/e7d6e72f58f4c421bc754d96c970c088.png),![](media/97390b5bd7b4792d48a7b95626381f23.png)and
+![](media/4778a502c49e2b53681876b6fcdc2b8b.png)into the input box of
+block![](media/614c0d26ae97f3d25099ae4819cdc4fe.png).
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/606ec4378f196cb546b65fe65442ddc5.png) into **do** statement, keep
+HIGH; duplicate the block once and set to **LOW** and drag it into **else**
+statement.
+
+![](media/4a6cad3cb188cd157fee4d4efe29cbde.png)
+
+Now we have written the code of tracking sensor controlling white LED module.
+Upload the complete to see the final result!
+
+![](media/3c8bfd0cd46fb8f0f604bac35d65bc45.png)
+
+**Result:**
+
+Done wiring, connect the UNO R3 control board to computer’s USB port with USB
+cable to upload the code.
+
+Upload success, turn the Slide switch ON.
+
+When the left TCRT5000 infrared tube detects a white line, LED module lights;
+detecting a black line, LED turns off.
+
+In a similar way, we use other 2-way TCRT5000 infrared tubes to detect the
+black-white line. Refer to the knowledge of project 7-motor driving, we can
+extend to make a line tracking robot.
+
+![111111](media/ceafabe022fc6d7a108e750fec6aa0ff.jpeg)
+
+**Little Knowledge:**
+
+1.  In the code, we use the
+    library![](media/c40a604ef2aa7ab62c3eab93b8a01729.png) to read the HIGH/LOW
+    of the left sensor (D6); using the
+    block![](media/c9085683f10e49b84b5f7449b8e52679.png)also makes sense.
+
+The signal pin of the middle sensor is D7; the signal pin of the right sensor is
+D8.
+
+1.  ![](media/841ce70e1ca304bb65927939b62baed6.png) means that if condition 1 is
+    satisfied, it's going to be A, otherwise it's going to be B.
+
+![](media/4be13d6534e7746302b328cc8e162184.png)When using, you can find the
+**if...do...**statement block in the Mixly Control Block. Then click the gear
+icon on the block to drag out the **else** or **else if** block you need to use.
+
+**Extension Practice:**
+
+1.  Change the test code without using the library, making the same result.
+    (reference program)
+
+![](media/7d82bdd905cc64aff7379f5ff748fe63.png)
+
+## Project 9: Infrared Receiver
+
+**Overview:**
+
+There is no doubt that infrared remote control is commonly seen in our daily
+life. It's hard to imagine our world without it. In reality, an infrared remote
+control can be used to control a wide range of home appliances such as
+television, audio, video recorders and satellite signal receivers.
+
+Well, in the following let’s get a better understanding of the infrared remote
+control.
+
+![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)Infrared remote control is
+composed of infrared transmitting and infrared receiving systems. That is,
+consist of an infrared remote control, an infrared receiver module and a
+microcontroller that can decode.
+
+![05](media/e3abad34bbc300f832d811d238ec8e52.png)
+
+The 38K infrared carrier signal transmitted by an infrared remote controller is
+encoded by an encoding chip inside the remote controller. It is composed of a
+pilot code, user code, data code, and data inversion code. The time interval
+between pulses is used to distinguish whether it is a signal 0 or 1. (when the
+ratio of high level to low level is about 1:1, considered as signal 0.) And the
+encoding is just well composed of signal 0 and 1.
+
+The user code of the same button on remote controller is unchanged. Using
+difference data distinguish the key pressed on the remote control. When press
+down a button on the remote control, it will send out an infrared carrier
+signal. And when infrared receiver receives that signal, its program will decode
+the carrier signal, and through different data codes, thus can judge which key
+is pressed.
+
+The microcontroller is decoded by an received signal 0 or 1 to determine which
+key is pressed by the remote control.
+
+As for an infrared receiver module, it is mainly composed of an infrared
+receiving head. This device integrates with reception, amplification and
+demodulation. Its internal IC has been demodulated, able to complete all the
+work from infrared reception to output TTL level signal compatible. It outputs
+Digital signal. Suitable for IR remote control and infrared data transmission.
+
+The infrared receiver module has only three pins (Signal line, VCC, GND), very
+convenient to communicate with Arduino and other microcontrollers.
+
+![ks0313-7(5](media/079ed4988181f72afcdaf7a8f179287d.png)
+
+**Parameters of IR Receiver:**
+
+1.  Operating Voltage: 3.3-5V（DC）
+
+2.  Interface: 3PIN
+
+3.  Output Signal: Digital signal
+
+4.  **![QQ图片20190822142258](media/2a324860adbb35025e9658d969743403.jpeg)**Receiving
+    Angle: 90 degrees
+
+5.  Frequency: 38khz
+
+6.  Receiving Distance: 18m
+
+**Wiring Diagram:**
+
+**Note:** connect the infrared receiver sensor to P4（G、V、A1) connector on the
+motor drive shield. If the digital ports are not enough, analog port can be used
+as digital port. Analog port A0 corresponds to digital port14; A1 corresponds to
+digital port15.
+
+The white LED module is connected to motor drive shield; pin G for GND, V for
+5V, S for digital pin3 (S). Connect the power to BAT connector.
+
+**  
+**
+
+**Test Code:**
+
+Now write the program. When aligning at the IR receiver, press the key on the IR
+remote control, available to check the input signal change of IR receiver on the
+serial monitor.
+
+Go to **“Control”**, drag out
+the![](media/df6ea88b09e44f289d54df1e410ad0f9.png)block; and drag
+the![](media/874bf588f9e6f8f07d16461c82dacbab.png)block from **“SerialPort”**
+into the **“setup”** block.
+
+Next, IR receiver will receive the infrared signal when press different keys on
+the IR remote control.
+
+We first click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/f146a2a5069fb0312b8e8855007bdac6.png); drag the block
+![](media/eeb7a6f313f2a27724e43d182527fecc.png)from **“SerialPort”** into the
+infrared receiver block just made.
+
+Then go to **“Variables”**, drag out the
+block![](media/7c91037393f3de412e91d91419ee0bbd.png) into the
+block![](media/eeb7a6f313f2a27724e43d182527fecc.png).
+
+So the infrared receiver can receive the infrared signal.
+
+![](media/e9f65445fe6d36fe6a280ebbbe6e8443.png)
+
+Upload this code, open the serial monitor; aimed at the infrared receiver
+sensor, press the key on the IR remote control, IR receiver will receive the
+infrared signal, and indicator turns on red. And you can see the key encoding on
+the serial monitor.
+
+![IMG_256](media/55a1e0a99cb66ec17177a5d8f09151b3.jpeg)
+
+Next move on to realize the IR receiver controlling white LED with IR remote
+control.
+
+Press the front key![](media/bae597a869954357edad7727e7318f02.png)on the IR
+remote control, white LED turns on; press the
+key![](media/61e09eb1c0442664e9f869f7e9328cb2.png), white LED turns off. So here
+we call the if statement![](media/121edd9f773bdf0cf48143e5fe3d0ad7.png) from the
+**“Control”**. According to the measured result, we know the infrared
+encoding(string value) of front
+key![](media/bae597a869954357edad7727e7318f02.png) is FF629D; the infrared
+encoding(string value) of key![](media/61e09eb1c0442664e9f869f7e9328cb2.png) is
+FF02FD.
+
+As the command key of IR remote control is hexadecimal code, the front must add
+0x.
+
+If **ir_rec=0xFF629D**, press the front
+key![](media/bae597a869954357edad7727e7318f02.png)on the IR remote control,
+white LED turns on.
+
+Go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png) into the **if** statement,
+and drag out the block![](media/cf37ef39a87447715c837f4ab7c1cd8d.png)from the
+**“Variables”** into the first input box at the left side of “**=**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” and type “0xFF629D” , like
+this:![](media/3fcc16d9a06e65df01e6a08b00c02efe.png).
+
+Click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/606ec4378f196cb546b65fe65442ddc5.png) into **do** statement, keep
+HIGH.
+
+![](media/fd61925ed56ee571930d2c8b8faf3739.png)
+
+Duplicate the above code string once, change “0xFF629D” to “**0xFF02FD**” and
+set to **LOW**.
+
+![](media/3fcc16d9a06e65df01e6a08b00c02efe.png)
+
+Okay, the complete program has been written well. Upload the code to see the
+infrared remote control effect!
+
+![](media/238d6482790cea43aa4c7a3ead704645.png)
+
+![](media/f87b8afba997d88fe1b956cfe14f508d.png)**Result:**
+
+Code upload success, open the serial monitor, and set the baud rate to 9600.
+
+Press your remote control, aimed at the infrared receiver, to send the signal,
+and you will see the encoding of each button on the remote control.
+
+Note if press the control button too long, easily appear unreadable code.
+
+Press the front key![](media/bae597a869954357edad7727e7318f02.png)on the IR
+remote control, white LED turns on; press the
+key![](media/61e09eb1c0442664e9f869f7e9328cb2.png), white LED turns off.
+
+Here we have listed out each button value of keyestudio remote control as
+follows.
+
+![图形1](media/21820a275e9f609f8c44644c1d1bfcf8.jpeg)
+
+**Little Knowledge:**
+
+1.  In the code, we direct use the
+    library![](media/bf8b45b69c962815e230336cab7d11d7.png); the signal pin of IR
+    receiver module is A1; the IR receiver receives an infrared signal and
+    outputs 16-bit encoding, printing out on serial monitor (baud rate 9600).
+
+2.  We can test out the 16-bit encoding of each button on the infrared remote
+    control by source code. Or you can see the button encoding chart shown
+    above.
+
+**Extension Practice:**
+
+1.  Driving the 2 motors’ turning direction and speed by infrared remote
+    control. (refer to project 6/7- motor driving) Combine infrared receiver and
+    motors driving knowledge to build an infrared remote control car. (reference
+    program)
+
+    ![](media/a22d01b27297037ff6b7a2bfd7e0585b.png)
+
+# Assembly Steps for Smart Car
+
+Follow the assembly steps below to build your own robot.
+
+## Bottom motor parts
+
+You should mount two motors on the Acrylic bottom board.
+
+![](media/ff300d67e066a4a83197ebf6109590bc.png)Prepare the components as
+follows:
+
+-   M2 Nut \*4
+
+-   White N20 motor holder \*2
+
+-   12FN20 motor connector \*2
+
+-   M2\*10MM round-head screw \*4
+
+-   Acrylic bottom board \*1
+
+First place four M2 Nuts inside the holes of white N20 motor holders.
+
+![](media/ac0d656899e43d328b3c48da7a138fd8.jpeg)
+
+**Note:** the Acrylic plate is marked with A, B for the two motors. Mount the
+motor A to label A on the Acrylic plate; motor B to Acrylic position B.
+
+Then mount the white N20 holders onto the motors.
+
+![01](media/9677003ec105db70ae2e9f48148a3f08.jpeg)![\_DSC0031(1)](media/6906cf46bb0dd303de6930bf447c65df.jpeg)
+
+Fix these two 12FN20 motor connectors on the Acrylic bottom plate with four
+M2\*10MM round-head screws.
+
+Tighten them with screwdriver.
+
+![](media/294054c8625eb315829350ec41c147df.jpeg)
+
+## Battery case
+
+You can choose the 18650 2-cell battery case or 4-cell AA battery case.   
+Mount the battery case on the acrylic bottom board.
+
+Here we install the 4-cell AA battery case for the smart car.
+
+![04](media/4dbcd153f2bcdc3a1cc0b460e350c439.jpeg)You should first get some
+parts below:
+
+-   4-cell Battery case\*1
+
+-   M3\*8MM flat-head screws \*2
+
+-   M3 Nut \*2
+
+Fix the battery case on the top of Acrylic board using two M3\*8MM flat-head
+screws and two M3 Nuts.
+
+Tighten the screws with screwdriver and self-prepared wrench.  
+![](media/c2c07d3991da58942a95b790b12c8076.jpeg)
+
+## Tracking sensor and wheels
+
+Assemble the line tracking sensor and connect the wire:
+
+-   JST-PH2.0MM-2P 24AWG red-black wire 160mm \*2
+
+-   JST-PH2.0MM-5P blue-green-yellow-red-black connector wire 15CM \*1
+
+-   ![\_DSC1729](media/8e65504059fd12f908921fc828d73bed.jpeg)M3\*5+6MM
+    single-pass copper pillars \*2
+
+-   M3\*6MM round-head screws \*2
+
+-   M3 Nut \*2
+
+-   Wheel \*2
+
+-   Line tracking sensor \*1
+
+Connect 2 pieces of JST-PH2.0MM-2P red-black wire 160mm to the 12FN20 motor
+connectors. Connect two wheels to the motor spin.
+
+![\_DSC1732](media/7d4b2c568a614b6670ddbeceedf89e40.jpeg)
+
+Insert two M3\*5+6MM single-pass copper pillars into the holes on the line
+tracking sensor, and tighten two M3 Nuts on the copper pillars. Shown below.
+Tighten the nuts and screws with a self-prepared wrench.
+
+![\_DSC1731](media/bc6c35431d49441849db8914237afd48.jpeg)
+![\_DSC1730](media/1ec4994d4a47c9c803df7e290d1dde3f.jpeg)
+
+After that, mount the line tracking sensor on the Acrylic board with two M3\*6MM
+round-head screws. Tighten the nuts and screws with a screwdriver and
+self-prepared wrench.
+
+![\_DSC1733](media/1407aed06be135aa3c226b612d0b8326.jpeg)
+
+Connect a JST-PH2.0MM-5P 24AWG blue-green-yellow-red-black connector wire 15CM
+to the connector of tracking sensor. Shown below.
+
+![](media/4e5ee277646ef5f15897ce46f48573e1.jpeg)
+
+Completed the above assembly, let's install the caster for this small car.
+
+-   W420 ball caster wheel \*1
+
+-   ![](media/408c6f5d213943604531f073c6c0bd74.png)M3\*6MM round-head screws \*6
+
+-   M3 Nut \*2
+
+-   M3\*8+6MM single-pass copper pillar \*2
+
+-   M3\*40MM dual-pass copper pillar \*4
+
+![\_DSC1736](media/e0ee59f899b1ab309796958d2aebc6c3.jpeg)
+![\_DSC1739](media/9478f27fed65e65085b553ba518c1de1.jpeg)
+
+Screw the W420 ball caster wheel on the Acrylic bottom board with two M3\*6MM
+round-head screws, two M3 Nuts, two M3\*8+6MM single-pass copper pillars.
+Tighten the screws with a screwdriver.
+
+![](media/5dd1c53df39847bb80289990e59d5004.jpeg)
+
+Screw four M3\*40MM dual-pass copper pillars on the 4 corner holes on acrylic
+bottom board with four M3\*6MM round-head screws. Tighten the screws with a
+screwdriver.
+
+![\_DSC1742](media/76dd16cc007ad5703e46428c0acda7e5.jpeg)
+
+![](media/c8ed411aef17a253492bbc56e38abfa2.jpeg)
+![\_DSC1746](media/2e5b30ad262aae82f462cd974743c716.jpeg)
+
+## Ultrasonic module
+
+Now should install the particular eyes for this smart car, i.e. Ultrasonic
+module.
+
+-   Ultrasonic module \*1
+
+-   ![](media/3765a440b977937700119cfb397c6c22.png)M3\*10MM round-head screw \*4
+
+-   M3 Nut \*4
+
+-   Ultrasonic acrylic board \*1
+
+-   JST-PH2.0MM-4P connector wire 8CM \*1
+
+Look at the figure below, fix the ultrasonic module on the acrylic board with
+four M3\*10MM round-head screws and four M3 Nuts. Then connect the
+JST-PH2.0MM-4P connector wire to ultrasonic module.
+
+![\_DSC1728](media/6fcfc44ddf17166265ffe32e02cc1d50.jpeg)
+![\_DSC1727](media/c3ab55030c89f86b507c2db3d14d8e7f.jpeg)
+
+## Acrylic top board
+
+Fix other sensors on the Acrylic top board. Prepare parts as follows:
+
+![](media/92aaf98193ef5ae13284207feea56d03.png)
+
+-   Acrylic top board \*1
+
+-   Obstacle detector sensor \*2
+
+-   IR receiver sensor \*1
+
+-   Keyestudio power amplifier module \*1
+
+-   M3\*10MM round-head screw \*4
+
+-   M3 Nut \*8
+
+-   M3\*8+6MM single-pass copper pillar\*4
+
+-   JST-PH2.0MM-3P yellow-red-black wire 8CM \*3
+
+-   3pin F-F jumper wire \*1
+
+Tighten four M3\*8+6MM single-pass copper pillars on the acrylic top board with
+four M3 Nuts using a wrench.
+
+![](media/ed28d34b0481e09fa478fde28fe75e15.jpeg)
+
+Separately mount two obstacle detector sensors and an IR receiver sensor on
+Acrylic top plate with three M3\*10MM screws and three M3 Nuts. Tighten them
+with a screwdriver and a self-prepared wrench.
+
+![\_DSC1749](media/2ae132447490d1c20cebddc60f4bee44.jpeg)
+![\_DSC1752](media/569a21dc44413d8f6dad485fafbbfe7e.jpeg)
+
+Mount keyestudio power amplifier module on Acrylic top plate with a M3\*10MM
+screw and a M3 Nut. Tighten them with a screwdriver and a self-prepared wrench.
+
+![\_DSC1754-](media/f399b20809d99441c08c68e77afaa39c.jpeg)
+
+![](media/8482639fd98e9dc4237e2b7b85be6389.jpeg)
+
+Connect the wire to the keyestudio power amplifier module, obstacle detector
+sensors and an IR receiver sensor.
+
+![\_DSC1758](media/5c7c794147dfc7c551ff59fb9078effa.jpeg)
+
+## Complete Car
+
+Till now, the smart car is almost installed well.   
+Assemble all the finished parts and install the control board as follows:
+
+-   UNO R3 main board \*1
+
+-   Motor drive shield \*1
+
+-   Bluetooth module\*1
+
+-   Jumpers cap \*8
+
+-   M3\*6MM round-head screw \*8
+
+![3UN85E[ZYZJ[J4ZV6A9N\`%U](media/b3b7db7aeed21c3bd7cc03de9123a4ee.jpeg)
+
+![\_DSC1761](media/1e00de2769e04c0032866e560222881d.jpeg)
+
+Firstly, insert the ultrasonic module into the two holes of Acrylic bottom
+board. Then, screw the Acrylic top board to the copper pillars mounted on
+Acrylic bottom plate with four M3\*6MM round-head screws.
+
+![\_DSC1762](media/3ff0860865f902484474f723d3d4b3fd.jpeg)
+![\_DSC1763](media/24ed1f87fa637af04de52dc0bad4e59b.jpeg)
+
+After that, mount the UNO R3 main board onto the Acrylic top board with four
+M3\*6MM round-head screws using a screwdriver. And stack the motor drive shield
+onto UNO R3 board.
+
+![\_DSC1766](media/558b1f58c039c5814fd499da6ce99871.jpeg)![\_DSC1789](media/a55317aa269cbc30c6e3eec17d09d022.jpeg)
+
+Finally insert the 8 jumpers and HM-10 Bluetooth module into the motor drive
+shield.  
+(8 jumpers direction are by default; changing the jumper direction will change
+the motor turning direction)
+
+![\_DSC1791](media/5b24736c4e319bd518c8545d7a0ff625.jpeg)
+
+![\_DSC1794](media/651cf76baed3bb8d010c757714277abc.jpeg)
+
+Up to now, you have finished the hardware installation of the smart car.
+Congrats!
+
+For wiring, you can connect all the wires according to the corresponding
+silk-screen on the board.
+
+**![8](media/6a8d76ce62f71661f3fd1c8acbcd280f.png)Connection diagram:**
+
+![33](media/7b7764c2c229745ba56ac69df2f1a667.png)
+
+## Project 10: Following Robot
+
+**Circuit Design:**
+
+In the above sections we already introduced the motor drive shield, sensor,
+module, motors and other elements.
+
+According to the project 3/5/7 -- obstacle detection, obstacle alarm, and
+library driving motor,
+
+![000](media/1e5a263ec9786ea2dee8db942e124267.png)we’re now ready to give the
+robot capability - Object Following!
+
+In the project, we make the robot measure whether exist obstacles
+
+at both sides with obstacle detector sensors. Measure the distance
+
+between obstacle and robot, and then use the measured data to
+
+rotate the two motors, so as to control the robot car run.
+
+**Below is a specific logic table of following robot for your reference:**
+
+| **Detection** | Left obstacle avoiding sensor            | With obstacle：val_L=0 |
+|---------------|------------------------------------------|------------------------|
+|               |                                          | No obstacle：val_L=1   |
+|               | Right obstacle avoiding sensor           | With obstacle：val_R=0 |
+|               |                                          | No obstacle：val_R=1   |
+|               | Obstacle distance measured by ultrasonic | distance（unit：cm）   |
+| **If**        | distance≤5                               |                        |
+|               | val_L=0 and val_R=0                      |                        |
+| **Status**    | Go backward（PWM set to 200）            |                        |
+| **If**        | distance＞5 and val_L=0 and val_R=1      |                        |
+| **Status**    | Rotate to left （PWM set to 200）        |                        |
+| **If**        | distance＞5 and val_L=1 and val_R=0      |                        |
+| **Status**    | Rotate to right（PWM set to 200）        |                        |
+| **If**        | 5＜distance≤15 and val_L=1 and val_R=1   |                        |
+| **Status**    | Stop                                     |                        |
+| **If**        | 15＜distance≤35 and val_L=0 and val_R=1  |                        |
+| **Status**    | Go forward（PWM set to 255）             |                        |
+| **If**        | distance＞35 and val_L=1 and val_R=0     |                        |
+| **Status**    | Stop                                     |                        |
+
+**Build Following Robot:**
+
+Based on the designed circuit, we are going to build a following robot car.
+Check the circuit diagram and test code.
+
+**![3](media/887692a3a27139fd66582d4eebf3c76a.png)**
+
+**Note:** stack the motor drive shield onto UNO R3 control board. connect the
+ultrasonic sensor to motor drive shield’s P2 connector with 4P jumper wire, VCC
+pin to V, Trig pin to digital 13 (S), Echo pin to digital 12 (S), G pin to
+GND(G);
+
+Connect the left obstacle detector sensor to the P3（G、V、A0) connector on the
+motor drive shield; the right obstacle detector sensor to P5（G、V、A2)
+connector with 3P jumper wire;
+
+Connect the motor A and motor B to connector A and B separately. Connect the
+power supply to BAT connector.
+
+**Test Code:**
+
+Now write the program to achieve the function of following robot.
+
+First we set up three variables, “**distance**”, “**val_L**”and “**val_R**”. The
+variable “distance” means save the distance value measured by ultrasonic sensor;
+“val_L”and “val_R” respectively save the signal of obstacle detected by the left
+and the right obstacle detector sensor.
+
+Click **“Variables”**, drag out the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png); and drag the
+block![](media/e4ca6cf968f2bcc710de5bc2813d5027.png)from **“Math”** into the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png). Then duplicate the
+block![](media/4e2b717f74fbaf4c949a265bf8195ac1.png)twice; respectively change
+“item”into“distance”、“val_L”and“val_R”; set the value to 0.
+
+![](media/32067129dfc6baa55829ebb485571f47.png)
+
+A variable is like a box, and a new variable is like making a box; we can give
+the box a name, like we just called it “distance”. The things placed inside the
+box can be changed, like we can place oranges, apples, pears, etc.
+
+The function of the variable box in this program is to load the distance digit.
+With this box called “distance”, we can store the measured distance digit
+between ultrasonic sensor and front obstacle. So every time I mention distance,
+it refers to the distance value measured by the ultrasonic sensor at that time.
+
+Click **“Variables”**, drag out the
+block![](media/91307dcf44ad5e920649ea888fb8a4da.png)and![](media/7aa1e2b3d632603a9163e0f1ea63ce36.png);
+and drag the
+block![](media/e05dc6f5599fb88a04682d0f967f3133.png)from**“Desktop_Car_V3”**
+into the block![](media/91307dcf44ad5e920649ea888fb8a4da.png). And again go to
+drag the block![](media/a9045831fe232af5a34b9929a100b02e.png)into the
+block![](media/7aa1e2b3d632603a9163e0f1ea63ce36.png); then duplicate this code
+string once, change“val_L”to“val_R”, click the drop-down triangle to select
+“right_infrared_avoid”.
+
+![](media/d10055786b210fe6d0ae660f167e5c7e.png)
+
+Next judge whether the ultrasonic sensor detects front obstacle or the left and
+the right obstacle detector module detects obstacle.
+
+Here we can use the judgement statement **“if...do...else if...do...”** . First
+write the program when the centre obstacle distance detected by ultrasonic
+sensor is smaller than or equal to 5cm, or both the left and the right obstacle
+detector module detect obstacle, the robot will turn back at a speed of PWM200.
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/ac23ad3f6d553ce9a4a087a7dea1f486.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block five times. So you can
+get the block:
+
+![](media/72f38592b5396c63063167a2e0ad4cef.png)
+
+Next, go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png)and select**“≤”**; go to
+**“Variables”**, drag out the
+block![](media/05d2b5a65dc70b57437949fea8ba600e.png) into the first input box at
+the left side of “**≤**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**≤**” ; change the value 0 to 5; like
+this:![](media/19947600dbb5951c052a5b6e7dd05a38.png)(note you can type the value
+flexibly.)
+
+We duplicate this block twice, respectively change the
+variable“distance”to“val_L”and“val_R”;“≤”to“＝”
+
+We have mentioned before that the obstacle detector module detects obstacle,
+output LOW digital signal 0; detects no obstacle, output HIGH digital signal 1.
+So here change the value 5 to 0.
+
+![](media/880bfa75c9c475761ed88ccb9b512e00.png)
+![](media/156c3e594e21f8144a2b37b902bbadcf.png)
+
+Think back, we use the two words “or”, “and ” when describe the judgement
+statement. There are two blocks in **“Logic”** to represent either one of two
+conditions happens or both of them happen at the same time, that
+is![](media/aba13148e17d87f2cbfbe8b4256ab410.png),
+![](media/eea59977188f7ea2066b04a28304ed4c.png).
+
+Drag out the block![](media/eea59977188f7ea2066b04a28304ed4c.png) and click the
+drop-down triangle to select “or” and can get the
+block![](media/aba13148e17d87f2cbfbe8b4256ab410.png).
+
+Drag the block![](media/eea59977188f7ea2066b04a28304ed4c.png) into
+block![](media/aba13148e17d87f2cbfbe8b4256ab410.png) to make
+as![](media/7e5b25d819b337b199d52f783154a0cb.png).
+
+Then drag the block![](media/19947600dbb5951c052a5b6e7dd05a38.png)into the first
+input box of or block![](media/7e5b25d819b337b199d52f783154a0cb.png); drag the
+block ![](media/880bfa75c9c475761ed88ccb9b512e00.png)and
+![](media/156c3e594e21f8144a2b37b902bbadcf.png)respectively into the input box
+of and block![](media/7e5b25d819b337b199d52f783154a0cb.png). So can get the
+block![](media/92e2a4f42baa8a638c8ce232a659c6fd.png) and drag it behind to the
+**if** statement. This means the judgment condition is when the centre obstacle
+distance detected by ultrasonic sensor is smaller than or equal to 5cm, or both
+the left and the right obstacle detector module detect obstacle.
+
+Followed by drag out the
+block![](media/0f1b6fcea638f56b3b6ef765cd8293a3.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Thus, we now have written well the program when the front obstacle distance
+detected by ultrasonic sensor is smaller than or equal to 5cm, or both the left
+and the right obstacle detector module detect obstacle, the robot will turn back
+at a speed of PWM200.
+
+![](media/65ecc15a93f86e63b69181def25b93ac.png)
+
+We now move on to write the program. When the front obstacle distance detected
+by ultrasonic sensor is greater than 5cm, and the left obstacle detector module
+detects obstacle and the right one didn’t detect obstacle, the robot will rotate
+to left at a speed of PWM200.
+
+Duplicate the block![](media/92e2a4f42baa8a638c8ce232a659c6fd.png)once and drag
+into the first **else if** statement; set to **distance＞5 and val_L=0 and
+val_R=1**
+
+![](media/8ebd4a60e388d2f4dc065c704f1006ed.png)
+
+Drag out the
+block![](media/7a9492c4fb1b6464273018df8dcd313a.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Next write the program that the front obstacle distance detected by ultrasonic
+sensor is greater than 5cm, and the left obstacle detector module didn’t detect
+obstacle and the right one detects obstacle, the robot will rotate to right at a
+speed of PWM200.
+
+Duplicate the block![](media/8ebd4a60e388d2f4dc065c704f1006ed.png)once and drag
+into the second **else if** statement; set to **distance＞5 and val_L=1 and
+val_R=0**
+
+![](media/a9d9e9d1213a6aa508d094aaf5a79eb7.png)
+
+Drag out the
+block![](media/4a41e4c8cb630f9846ea683f3a6a1171.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+![](media/dd94bd20a49f228ed93bb769113d5214.png)
+
+Move on to write the program. When the front obstacle distance detected by
+ultrasonic sensor is greater than 5cm, and smaller than or equal to 15cm, and
+both obstacle detector modules didn’t detect obstacle, the robot will stop
+running.
+
+Go to **“Logic”**, drag out the
+block![](media/00c8e7dffb9e23776d0957ac34e069bc.png); duplicate the
+block![](media/6b42dde6ad79672a62127768085661a0.png)once and set to
+**“distance≤15”**; then separately drag the
+block![](media/6b42dde6ad79672a62127768085661a0.png)and![](media/eba0cfe42fe8c9bd4991acc5915422fd.png)into
+the input box of block![](media/00c8e7dffb9e23776d0957ac34e069bc.png), like
+this:![](media/ce10c4d1b6bb6004c137877239db7d29.png).
+
+And again drag out the block![](media/00c8e7dffb9e23776d0957ac34e069bc.png),
+then drag the block![](media/ce10c4d1b6bb6004c137877239db7d29.png) into the
+first input box of block![](media/00c8e7dffb9e23776d0957ac34e069bc.png);
+duplicate the block![](media/a146a1ffe93d8dfc7e6668d2c8bdbed4.png) once and drag
+it into the second input box of
+block![](media/00c8e7dffb9e23776d0957ac34e069bc.png)and change “val_R=0” into
+“val_R=1”.
+
+![](media/b1dd01e41c67c60df8219081d43f3009.png)
+
+Now drag the block![](media/b1dd01e41c67c60df8219081d43f3009.png)into the third
+**else if** statement. Drag out the
+block![](media/f975edb654b797b35120c5630d89f735.png)from**“Desktop_Car_V3”**into
+the **do** statement.
+
+Next it’s easy to write the program. When the front obstacle distance detected
+by ultrasonic sensor is greater than 15cm, and smaller than or equal to 35cm,
+and both obstacle detector modules didn’t detect obstacle, the robot will go
+front at a speed of PWM255.
+
+Direct duplicate the block![](media/b1dd01e41c67c60df8219081d43f3009.png) once
+and change to **distance＞15 and distance≤35**, and drag it into the fourth
+**else if** statement.
+
+Drag out the
+block![](media/d342c0ecdae2b7a9805ab1648ad26d0d.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to 255.
+
+Finally write the program. When the front obstacle distance detected by
+ultrasonic sensor is greater than 35cm, and both obstacle detector modules
+didn’t detect obstacle, the robot will stop running.
+
+Duplicate the code block![](media/a9d9e9d1213a6aa508d094aaf5a79eb7.png)once and
+drag it into the fifth **else if** statement. Change to **distance＞35 and
+val_L=1 and val_R=1**
+
+Drag out the
+block![](media/f975edb654b797b35120c5630d89f735.png)from**“Desktop_Car_V3”**into
+the **do** statement.
+
+![](media/cac6cc17938b785f405f838a6469bfc7.png)
+
+Now the code for following robot is finished. Upload the complete code to
+operate your desktop robot!
+
+**  
+**
+
+![](media/67fced4bf5c7e0f7abb76e094c282ecc.png)
+
+**Test Code:**
+
+**  
+**
+
+![000](media/1e5a263ec9786ea2dee8db942e124267.png)
+
+**Result:**
+
+Stack the motor drive shield onto UNO R3 board. Connect the UNO R3 control board
+to computer’s USB port with USB cable to upload the code.
+
+Upload success and turn the slide switch to ON position.
+
+The robot will follow the front object to move.
+
+## Project 11: Obstacle Avoiding Robot
+
+**Circuit Design:**
+
+We’re now ready to give the robot another capability - Obstacle Avoiding!
+
+It is pretty simple. Just keep the same components and connection method as
+following robot, but need to change the code.
+
+![避障](media/2116287dac5203e556457d733769843b.jpeg)
+
+**Below is a specific logic table of obstacle avoiding robot:**
+
+| **Detection** | Left obstacle avoiding sensor                                                          | With obstacle：val_L=0 |
+|---------------|----------------------------------------------------------------------------------------|------------------------|
+|               |                                                                                        | No obstacle：val_L=1   |
+|               | Right obstacle avoiding sensor                                                         | With obstacle：val_R=0 |
+|               |                                                                                        | No obstacle：val_R=1   |
+|               | Obstacle distance measured by ultrasonic                                               | distance（unit：cm）   |
+| **If**        | val_L=0 and val_R=0                                                                    |                        |
+| **Status**    | Go backward for 1 second（PWM set to 150）, turn left for 0.5 second（PWM set to 200） |                        |
+| **If**        | val_L=1 and val_R=0                                                                    |                        |
+| **Status**    | Rotate to left（PWM set to 200）                                                       |                        |
+| **If**        | val_L=0 and val_R=1                                                                    |                        |
+| **Status**    | Rotate to right（PWM set to 200）                                                      |                        |
+| **If**        | distance≤10 and val_L=1 and val_R=1                                                    |                        |
+| **Status**    | Rotate to right（PWM set to 200）                                                      |                        |
+| **If**        | distance＞10 and val_L=1 and val_R=1                                                   |                        |
+| **Status**    | Go forward（PWM set to 200）                                                           |                        |
+
+**Build Obstacle Avoiding Robot:**
+
+Based on the designed circuit, we are going to build an obstacle avoiding robot
+car.
+
+**![4](media/81196f83aa1620d9fedd65ffabf3bf16.png)**
+
+**Test Code:**
+
+In the above section we have introduced how to use the ultrasonic sensor and
+obstacle detector module to make a following robot. Now let’s write the program
+to make the robot automatically avoid obstacles.
+
+First we set up three variables, “**distance**”, “**val_L**”and “**val_R**”. The
+variable “distance” means save the distance value measured by ultrasonic sensor;
+“val_L”and “val_R” respectively save the signal of obstacle detected by the left
+and the right obstacle detector sensor.
+
+Click **“Variables”**, drag out the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png); and drag the
+block![](media/e4ca6cf968f2bcc710de5bc2813d5027.png)from **“Math”** into the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png). Then duplicate the
+block![](media/4e2b717f74fbaf4c949a265bf8195ac1.png)twice; respectively change
+“item”into“distance”、“val_L”and“val_R”; set the value to 0.
+
+![](media/04682805f9069340f866822a10732e0b.png)
+
+Click **“Variables”**, drag out the
+block![](media/91307dcf44ad5e920649ea888fb8a4da.png)and
+![](media/7aa1e2b3d632603a9163e0f1ea63ce36.png); and drag the
+block![](media/e05dc6f5599fb88a04682d0f967f3133.png)from**“Desktop_Car_V3”**
+into the block![](media/91307dcf44ad5e920649ea888fb8a4da.png). And again go to
+drag the block![](media/a9045831fe232af5a34b9929a100b02e.png)into the
+block![](media/7aa1e2b3d632603a9163e0f1ea63ce36.png); then duplicate this code
+string once, change“val_L”to“val_R”, click the drop-down triangle to select
+“right_infrared_avoid”.
+
+![](media/baa755721c636f3836c2065a4efecca3.png)
+
+Next judge whether the ultrasonic sensor detects front obstacle or the left and
+the right obstacle detector module detects obstacle. Here we can use the
+judgement statement **“if...do...else if...do...”** .
+
+First write the program. No matter how far the front obstacle detected by
+ultrasonic sensor, as long as both the left and the right obstacle detector
+module detect obstacle, the robot will turn back for one second at a speed of
+PWM150, and then turn left for 0.5 second at a speed of PWM200.
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/ac23ad3f6d553ce9a4a087a7dea1f486.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block four times. So you can
+get the block:
+
+![](media/a0b070b349cc2eba7cecdcea098c039f.png)
+
+Next, go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png); go to **“Variables”**,
+drag out the block![](media/6bef9a7c94d2917d179fd589b11ab362.png) into the first
+input box at the left side of “**=**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” ; keep the value 0; like
+this:![](media/c28f27e2eacfdb329857bf1b6d60d21f.png).
+
+We duplicate this block once, and change the
+variable![](media/6bef9a7c94d2917d179fd589b11ab362.png)
+to![](media/f67438ac49dce3d4a7666e33450ae95c.png); like
+this:![](media/156c3e594e21f8144a2b37b902bbadcf.png)
+
+And again go to **“Logic”**, drag the
+block![](media/ff520baa20f455f5d20d7345e1587d6e.png)into the **if** statement,
+then drag the block ![](media/c28f27e2eacfdb329857bf1b6d60d21f.png) and
+![](media/156c3e594e21f8144a2b37b902bbadcf.png) into the input box of
+block![](media/ff520baa20f455f5d20d7345e1587d6e.png).
+
+![](media/ab1577daab8859b565095cc326ec7f94.png)
+
+Drag out the
+block![](media/dc17545c7ef89d7c84fe86774baf9858.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to **PWM150**. And add a delay block in
+**1000ms**.
+
+Then drag out the block![](media/3719440b8d42739308f0c2fff055f693.png)into the
+**do** statement, and set the value to **PWM200**. And add a delay block in
+**500ms**.
+
+Till now we have made a piece of code like below:
+
+![](media/3a559d3dcb726700ba63f6507257aad6.png)
+
+We now move on to write the program. No matter how far the front obstacle
+detected by ultrasonic sensor, the left obstacle detector module didn’t detect
+obstacle and the right one detects obstacle, the robot will rotate to left at a
+speed of PWM200; the left obstacle detector module detects obstacle and the
+right one didn’t detect obstacle, the robot will rotate to right at a speed of
+PWM200.
+
+Duplicate the block![](media/ab1577daab8859b565095cc326ec7f94.png)once and drag
+into the first **else if** statement; set to **val_L=1 and val_R=0**
+
+Drag out the
+block![](media/7a9492c4fb1b6464273018df8dcd313a.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Duplicate the block![](media/ab1577daab8859b565095cc326ec7f94.png)once again and
+drag into the second **else if** statement; set to **val_L=0 and val_R=1**
+
+Drag out the
+block![](media/1af28ad8ad27dffd206988054b5f92c9.png)from**“Desktop_Car_V3”**
+into the **do** statement; change the PWM0 into **PWM200**.
+
+![](media/490de9c874cd4bb20be189c5c98b8bfd.png)
+
+We continue to write the program. When the front obstacle distance detected by
+ultrasonic sensor is smaller than or equal to 10cm, and both obstacle detector
+modules didn’t detect obstacle, the robot will rotate to right at a speed of
+PWM200. When the front obstacle distance detected by ultrasonic sensor is
+greater than 10cm, and the left obstacle detector module detects obstacle and
+the right one didn’t detect obstacle, the robot will go front at a speed of
+PWM200.
+
+go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png)and select**“≤”**; go to
+**“Variables”**, drag out the
+block![](media/05d2b5a65dc70b57437949fea8ba600e.png) into the first input box at
+the left side of “**≤**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**≤**” ; change the value 0 to 10; like
+this:![](media/94b08fda8449c8519873568da66d33a9.png)
+
+Drag out the block![](media/eea59977188f7ea2066b04a28304ed4c.png) into the third
+**else if** statement; drag the
+block![](media/94b08fda8449c8519873568da66d33a9.png)into the first input box of
+block![](media/eea59977188f7ea2066b04a28304ed4c.png); duplicate the
+block![](media/1e735f1975bcab59d2dc426964764f9b.png)once and drag it into the
+second input box of block![](media/eea59977188f7ea2066b04a28304ed4c.png); set to
+**val_L=1 and val_R=1**
+
+![](media/d7ee6253476ba300abe555a3bc2943bb.png)
+
+Drag out the
+block![](media/1af28ad8ad27dffd206988054b5f92c9.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Then duplicate the block![](media/d7ee6253476ba300abe555a3bc2943bb.png)once and
+drag it into the fourth **else if** statement; change to **distance＞10**, and
+drag out the block![](media/a7018d72543389a8c511cc8ea497c58a.png)into the **do**
+statement; change the PWM0 into **PWM200**.
+
+![](media/6fe9bf327c8b46b8a23ebe2fd8caba39.png)
+
+![](media/0457573fbc58a4eea178c9c461e7f720.png)**Source Code:**
+
+Now the code for obstacle avoiding
+
+robot is finished. Upload the complete
+
+code to see the final effect!
+
+Can’t connect the Bluetooth module when upload the code, otherwise, code upload
+fails. You should upload the code success, then plug in the Bluetooth module.
+
+![避障](media/2116287dac5203e556457d733769843b.jpeg)
+
+**Result:**
+
+Upload success and turn the slide switch to ON position.
+
+The robot can automatically avoid the front obstacle to run.
+
+## Project 12: Line Tracking Robot
+
+**Circuit Design:**
+
+In the above sections we already introduced the motor drive shield, sensor,
+module, motors and other elements.
+
+According to the project 7/8 -- library driving motor, line tracking sensor,
+
+we’re now ready to give the robot capability - Line Tracking!
+
+In the project, we make the robot detect black line at the car bottom with line
+tracking sensor. Then control the 2 motors rotate by measured result, so as to
+drive the robot track black line.
+
+**Below is a specific logic table of line tracking robot for your reference:**
+
+**  
+**
+
+| **Detection**                             | Middle tracking sensor                                                               | detects black line：HIGH          |
+|-------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------|
+|                                           |                                                                                      | detects white line：LOW           |
+|                                           | Left tracking sensor                                                                 | detects black line：HIGH          |
+|                                           |                                                                                      | detects white line：LOW           |
+|                                           | Right tracking sensor                                                                | detects black line：HIGH          |
+|                                           |                                                                                      | detects white line：LOW           |
+| **Condition**                             | **Status**                                                                           |                                   |
+| Middle tracking sensor detects black line | Go forward（PWM set to 200）                                                         |                                   |
+| Middle tracking sensor detects white line | The left tracking sensor detects black line and the right sensor detects white line; | Rotate to left（PWM set to 200）  |
+|                                           | The left tracking sensor detects white line and the right sensor detects black line; | Rotate to right（PWM set to 200） |
+|                                           | The left tracking sensor detects white line and the right sensor detects white line; | Stop                              |
+|                                           | The left tracking sensor detects black line and the right sensor detects black line. | Stop                              |
+
+**Build Line Tracking Robot:**
+
+Based on the designed circuit, we are going to build a line tracking robot car.
+Check the circuit diagram.
+
+**![5](media/ae6d41f663ccb05fb528336a3aff5a9f.png)**
+
+**  
+**
+
+**Note:** stack the motor drive shield onto UNO R3 control board. connect the
+line tracking sensor to motor drive shield’s P1 connector (G, V, D6, D7, D8);
+respectively connect the motor A and B to connector A and B on the motor drive
+shield. Connect the power supply to BAT connector.
+
+**Test Code:**
+
+Now write the program to build a line tracking robot.
+
+The line tracking sensor detects white, output LOW 0; detecting black, output
+HIGH 1.
+
+To judge whether the left, the center and the right tracking sensor detect black
+line, if the center tracking sensor detects black line, the robot will go front
+at a speed of PWM200.
+
+Here we can use the condition
+statement![](media/8349bbb9276453f897c515b0852df94a.png)or
+![](media/80341defb6a4352c57767dbafe48f1d4.png). But the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png)is
+[more](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;)
+[efficient](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;) than
+![](media/537643f5a9dbb4de231a4f85ecb31e58.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag
+the![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block ![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png)into the **if** statement,
+and drag out the block ![](media/5a78f4c0a67d0e40992022644723e7da.png)from
+the**“Desktop_Car_V3”**into the first input box at the left side of “**=**” and
+click drop-down triangle to select “center tracking”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” and change the value to 1 ; like
+this:![](media/218fa64972eacb7e86faf7fba53e30bc.png).
+
+Drag out the
+block![](media/e7688706456ac58c0675bb0ac029ef6f.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to PWM200.
+
+![](media/218fa64972eacb7e86faf7fba53e30bc.png)
+
+Or else, in the case that the center tracking sensor detects white line, if the
+left tracking sensor detects black line and the right tracking sensor detects
+white line, the robot will rotate to left at a speed of PWM200; if the left
+tracking sensor detects white line and the right tracking sensor detects black
+line, the robot will rotate to right at a speed of PWM200.
+
+Here we can use the condition statement **“if...do...else if...do...”**
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag
+the![](media/8c92dad80422ac98c292ec996b191018.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block![](media/c8b6d9a23339098b7545fb813cc82bc6.png)and then drag this block
+into the **else** statement of block
+![](media/218fa64972eacb7e86faf7fba53e30bc.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png), and drag out the
+block![](media/5a78f4c0a67d0e40992022644723e7da.png)from
+the**“Desktop_Car_V3”**into the first input box at the left side of “**=**”;
+drag the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into
+the second input box at the right side of “**=**” and change the value to 1 ;
+like this:![](media/2e1f1ae792cf72b9f80b77dfd007bdc9.png).
+
+We duplicate the block once, and respectively click the drop-down triangle icon
+to select “right_tracking” and change the value to
+0.![](media/4778a502c49e2b53681876b6fcdc2b8b.png)
+
+And again go to the **“Logic”**, drag out the
+block![](media/c400068e89cf5f4031bbffe808916f26.png) into the **if** statement;
+respectively drag the block
+![](media/2e1f1ae792cf72b9f80b77dfd007bdc9.png)and![](media/4778a502c49e2b53681876b6fcdc2b8b.png)into
+the input box of block![](media/c400068e89cf5f4031bbffe808916f26.png). Get the
+block: ![](media/389fb6dad76f3f6b70015df58d317603.png)
+
+Drag out the
+block![](media/7c87f7c8d62ffef929937d4fe13719ef.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to **PWM200**.
+
+![](media/5fb7f370155759cf9a3dd61070492ecc.png)
+
+Next duplicate the block![](media/389fb6dad76f3f6b70015df58d317603.png) once and
+drag it into **else if** statement; change to **“left_tracking=0 and
+right_tracking=1”**
+
+Drag out the
+block![](media/b1ac68bde23816e540af87545422f5af.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to PWM200.
+
+Till now we have made a piece of code like below:
+
+![](media/c4b224b4d1866bea11ea2f45b7b4c89b.png)
+
+In the case that the center tracking sensor detects white line, if the left
+tracking sensor detects white line and the right tracking sensor detects white
+line, the robot will stop running; if the left tracking sensor detects black
+line and the right tracking sensor detects black line, the robot will stop
+running.
+
+Click the blue gear icon on the left upper corner of **if** statement, appear
+the edit box, drag the![](media/13f70d0ae132abd39bbff86861a6a0fb.png)block
+beneath **else if** block![](media/6c558f80b7026b06c8fad16d875ad7fd.png). So
+that the block![](media/c8b6d9a23339098b7545fb813cc82bc6.png)will turn
+into![](media/d0c9d97e8147ecd172d4e9af864c56e0.png).
+
+Drag out the
+block![](media/908022603a7e4720da47f13dc37de441.png)from**“Desktop_Car_V3”**into
+the **else** statement.
+
+Now we’ve written well the program code for line tracking function. Upload the
+code to see the final effect!
+
+**Note:** Can’t connect the Bluetooth module when upload the code, otherwise,
+code upload fails. You should upload the code success, then plug in the
+Bluetooth module.
+
+![](media/44848364ea35b0caf5fba95b75739593.png)
+
+**![222](media/f2f47e1934bd18dc497680006b015383.jpeg)**
+
+**Result:**
+
+Upload success and turn the slide switch to ON position.
+
+The robot can automatically track black line.
+
+## Project 13: IR Remote Control Robot
+
+**Circuit Design:**
+
+In the above sections we’ve already introduced the motor drive shield, sensor,
+module, motors and other elements.
+
+According to the project 7/9 -- library driving motor, infrared receiver,
+
+we’re now ready to give the robot capability - IR Remote Control!
+
+![无字](media/635b8724dc3e7a27f940b3953ed4536d.jpeg)In the infrared receiver
+section, we have listed out each button encoding of remote control.
+
+In this project code, we can set the button value to control the robot status.
+
+**Below is a specific logic table of IR Remote Control robot for your
+reference:**
+
+| **Key**                                         | **Key value** | **Status**                        |
+|-------------------------------------------------|---------------|-----------------------------------|
+| ![](media/b11dc5ffa6cccebc6088e5d557d76daf.png) | FF629D        | Go forward（PWM set to 150）      |
+| ![](media/ae8110034aacb083151cfd882ee599ba.png) | FFA857        | Go backward（PWM set to 150）     |
+| ![](media/bce9cba2c6d2465fbcce570ad4210eba.png) | FF22DD        |  Turn left                        |
+| ![](media/ad907a618af86f30d52986bbbd57ba76.png) | FFC23D        | Turn right                        |
+| ![](media/9716a4ed61a4064d2f47a7b73eccaf87.png) | FF02FD        | Stop                              |
+| ![](media/92499f5bf0b8a1e6ec85526b5293fbbf.png) | FF30CF        | Rotate to left（PWM set to 100）  |
+| ![](media/dcada1dd0e8a75bc9f041e039bb15755.png) | FF7A85        | Rotate to right（PWM set to 100） |
+| ![](media/b5817bbd97a9c7a8deb99e5c8b043754.png) | FF9867        | Go forward（PWM set to 255）      |
+| ![](media/1e25bcb1fa5e513750739edb2aa9655a.png) | FF38C7        | Go backward（PWM set to 255）     |
+
+**Build IR Remote Control Robot:**
+
+Based on the designed circuit, we are going to build an IR remote control car.
+
+Check the circuit diagram and test code below.
+
+**![6](media/fb5b57acb7d14e760207bf15ce4d1034.png)**
+
+**  
+**
+
+**Note:** Stack the motor drive shield onto UNO R3 board. Due to IR receiver
+sensor inputting the digital signal, connect the infrared receiver sensor to
+P4（G、V、A1) connector on the motor drive shield. Respectively connect the
+motor A and B to the connector A and B on the motor drive shield. Connect the
+power to BAT connector.
+
+**Coding:**
+
+Write the program to make an infrared remote control robot.
+
+Go to **“Control”**, drag out
+the![](media/df6ea88b09e44f289d54df1e410ad0f9.png)block; and drag
+the![](media/874bf588f9e6f8f07d16461c82dacbab.png)block from **“SerialPort”**
+into the **“setup”** block.
+
+Next, to control the robot by infrared remote control, we first click the
+imported library**“Desktop_Car_V3”**, drag out the
+block![](media/f146a2a5069fb0312b8e8855007bdac6.png); drag the block
+![](media/eeb7a6f313f2a27724e43d182527fecc.png)from **“SerialPort”** into the
+infrared receiver block just made.
+
+Then go to **“Variables”**, drag out the
+block![](media/7c91037393f3de412e91d91419ee0bbd.png) into the
+block![](media/eeb7a6f313f2a27724e43d182527fecc.png).
+
+![](media/2e47941debc32d4dcea41ba1a73e4e41.png)
+
+Press the keys to navigate the robot how to run. Here we use the condition
+statement![](media/4abd1b01bc580af28fa1c5a0d09e6dac.png).
+
+Go to **“Control”**, drag out
+the![](media/4abd1b01bc580af28fa1c5a0d09e6dac.png)block. According to the
+project 9, we have listed out the string value of each key on infrared remote
+control.
+
+The front key![](media/b11dc5ffa6cccebc6088e5d557d76daf.png)is FF629D; back key
+![](media/ae8110034aacb083151cfd882ee599ba.png) is FFA857; left
+key![](media/bce9cba2c6d2465fbcce570ad4210eba.png) is FF22DD; right
+key![](media/ad907a618af86f30d52986bbbd57ba76.png) is FFC23D;
+![](media/9716a4ed61a4064d2f47a7b73eccaf87.png)is FF02FD;
+![](media/92499f5bf0b8a1e6ec85526b5293fbbf.png)is FF30CF;
+![](media/dcada1dd0e8a75bc9f041e039bb15755.png)is FF7A85;
+![](media/b5817bbd97a9c7a8deb99e5c8b043754.png)is FF9867;
+![](media/1e25bcb1fa5e513750739edb2aa9655a.png) is FF38C7.
+
+As the command key of IR remote control is hexadecimal code, the front must add
+0x.
+
+If **ir_rec=0xFF629D**, press the
+key![](media/bae597a869954357edad7727e7318f02.png)on the IR remote control, the
+robot will go front at a speed of PWM150.
+
+Go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png) into the **if** statement,
+and drag out the block![](media/cf37ef39a87447715c837f4ab7c1cd8d.png)from the
+**“Variables”** into the first input box at the left side of “**=**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” and type “0xFF629D” , like
+this:![](media/3fcc16d9a06e65df01e6a08b00c02efe.png).
+
+Click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/5b34034c1a89cacc3d1b7db109b619d3.png) into **do** statement and
+change to **PWM150**.
+
+![](media/675b0a34d33d917caeb69529b10e4e9e.png)
+
+If **ir_rec=0xFFA857**, press the
+key![](media/ae8110034aacb083151cfd882ee599ba.png)on the IR remote control, the
+robot will go back at a speed of PWM150.
+
+Duplicate the block![](media/3fcc16d9a06e65df01e6a08b00c02efe.png)once and
+change “0xFF629D” to “**0xFFA857**” and drag into the **if** statement. Click
+the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/c84f02baaeb7a135443c664ede1778ed.png)into **do** statement and
+change to **PWM150**.
+
+![](media/16bc37066fe5c17532fa8e45aef8f5c2.png)
+
+At the same way, if **ir_rec=0xFF22DD**, press the
+key![](media/bce9cba2c6d2465fbcce570ad4210eba.png)on the IR remote control, the
+robot will turn left.
+
+If **ir_rec=0xFFC23D**, press the
+key![](media/ad907a618af86f30d52986bbbd57ba76.png)on the IR remote control, the
+robot will turn right.
+
+If **ir_rec=0xFF02FD**, press the
+key![](media/9716a4ed61a4064d2f47a7b73eccaf87.png)on the IR remote control, the
+robot will stop.
+
+If **ir_rec=0xFF30CF**, press the
+key![](media/92499f5bf0b8a1e6ec85526b5293fbbf.png)on the IR remote control, the
+robot will rotate to left at a speed of PWM100.
+
+If **ir_rec=0xFF7A85**, press the
+key![](media/dcada1dd0e8a75bc9f041e039bb15755.png)on the IR remote control, the
+robot will rotate to right at a speed of PWM100.
+
+Duplicate the block![](media/3fcc16d9a06e65df01e6a08b00c02efe.png)five times and
+respectively change “0xFF629D” to “0xFF22DD”, “0xFFC23D”, “0xFF02FD”,
+“0xFF30CF”, “0xFF7A85”.
+
+Click the**“Desktop_Car_V3”**, respectively drag out the
+block![](media/a12da8f261310d3909db0c273e6589de.png),
+![](media/ceb68b299cca8f604b0472bd7a71412d.png),
+![](media/c8c767e2a521c71c244d929dba1c3550.png),
+![](media/dcb6fdaabea13e5f6f2ff5adcac555bc.png)and
+![](media/0081e6edcdc48aa8e0f0ca6447960d5e.png)into **do** statement and change
+to **PWM100**.
+
+![](media/fd6796ccb55f4116cec16f7dbe1a21f7.png)
+
+If **ir_rec=0xFF9867**, press the
+key![](media/b5817bbd97a9c7a8deb99e5c8b043754.png)on the IR remote control, the
+robot will go front at a speed of PWM255.
+
+If **ir_rec=0xFF38C7**, press the
+key![](media/1e25bcb1fa5e513750739edb2aa9655a.png)on the IR remote control, the
+robot will turn back at a speed of PWM255.
+
+Duplicate the block![](media/3fcc16d9a06e65df01e6a08b00c02efe.png)twice and
+respectively change “0xFF629D” to “0xFF9867”, “0xFF38C7”.
+
+Click the**“Desktop_Car_V3”**, respectively drag out the
+block![](media/5b34034c1a89cacc3d1b7db109b619d3.png),
+![](media/c84f02baaeb7a135443c664ede1778ed.png) and change to **PWM250**.
+
+![](media/c0e3c0733fd483ae509fffcdd15adae8.png)
+
+**  
+**
+
+![](media/5ac0fb2663eb1fb47fa306da2156241d.png)
+
+**Test Code:**
+
+**  
+**
+
+![红外(1)](media/2591e8f548634008df75b31b03cc4f16.jpeg)
+
+**Result:**
+
+Stack the motor drive shield onto UNO R3 board.
+
+Connect the UNO R3 control board to computer’s USB port with USB cable to upload
+the code.
+
+Upload success and turn the slide switch to ON position.
+
+We can use infrared remote control to randomly give commands to robot car.
+
+## Project 14: Bluetooth Controlled Robot
+
+We have built an infrared control smart car. In this project we are going to
+make a Bluetooth control smart car. Since it is a control smart car, there
+should be a control terminal and a controlled terminal.
+
+![蓝牙(1)](media/69167a85d018e9a721a34138783245cc.jpeg)In the course, we use the
+mobile phone as the console (host), and the HM-10 Bluetooth module (slave)
+connected to smart car as the controlled terminal.
+
+When using, we need to install an APP on the phone, and connect the HM-10
+Bluetooth module, then we use the buttons on the Bluetooth APP to control the
+smart car to achieve various motion states.
+
+## ![蓝牙信号](media/efa39026eb40290612c2369afe961c8a.png)Bluetooth Remote Control:
+
+Bluetooth technology is a wireless standard technology that enables
+short-distance data exchange between fixed devices, mobile devices, and building
+personal area networks (using UHF radio waves in the ISM band of 2.4 to 2.485
+GHz).
+
+The robot kit is equipped with the HM-10 Bluetooth module, which is a
+master-slave machine. When used as the Host, it can send commands to the slave
+actively; when used as the Slave, it can only receive commands from the host.
+
+The HM-10 Bluetooth module supports the Bluetooth 4.0 protocol, which not only
+supports Android mobile, but also supports iOS system.
+
+In the experiment, we default to use the HM-10 Bluetooth module as a Slave and
+the cellphone as a Host.
+
+We install the Bluetooth APP on the mobile phone, connecting the Bluetooth
+module; finally use the Bluetooth APP to control the robot car move, or to
+control the working status of other sensor modules on the robot car.
+
+We provide you with 2 types of mobile APP, for Android and iOS system.
+
+In this project, tap the forward button of the Bluetooth APP to control the
+buzzer sound. When the Bluetooth APP is successfully connected to the Bluetooth
+module, press the forward button of the Bluetooth APP, and the buzzer makes a
+small "click,click,click"; release the button to turn off the buzzer.
+
+![KS0455-2](media/db43e541ef38ea5bfec0a7eb913ce3b7.png)
+
+**Parameters of HM-10 Bluetooth Module:**
+
+-   Bluetooth protocol: Bluetooth Specification V4.0 BLE
+
+-   No byte limit in serial port Transceiving
+
+-   In open environment, realize 100m ultra-distance communication with iphone4s
+
+-   USB protocol: USB V2.0
+
+-   Working frequency: 2.4GHz ISM band
+
+-   Modulation method: GFSK(Gaussian Frequency Shift Keying)
+
+-   Transmission power: -23dbm, -6dbm, 0dbm, 6dbm, can be modified by AT
+    command.
+
+-   Sensitivity: ≤-84dBm at 0.1% BER
+
+-   Transmission rate: Asynchronous: 6K bytes ; Synchronous: 6k Bytes
+
+-   Security feature: Authentication and encryption
+
+-   Supporting service: Central & Peripheral UUID FFE0, FFE1
+
+-   Power consumption: Auto sleep mode, stand by current 400uA\~800uA, 8.5mA
+    during transmission.
+
+-   **![组 1 拷贝](media/881c8601f3f0dfd55db2593966c0bd17.png)**Power supply: 5V
+    DC
+
+-   Working temperature: -5 to +65 Centigrade
+
+## Using Bluetooth APP
+
+**For Android system:**
+
+1.  Click the Desktop_Car compression package to direct install the Desktop_Car
+    APP; installed well, appear the icon below on your mobile phone:
+
+    ![Screenshot_2019-06-17-08-18-37-92](media/3be8d2a3a0949f1d8452c6bde2fc7e85.png)
+
+    Download the Desktop_Car package from the link below:
+
+<https://drive.google.com/open?id=1mP3dCQu76xa-C3BbaECfQH0c9AaUFJek>
+
+Or you can download the keyestudio Desktop_Car APP direct from the Google Play:
+
+**Note: Allow APP to access LOCATION, you could enable LOCATION in settings of
+your cellphone.**
+
+![](media/d86028e9ea6e85c9f850cbeb5a7d2f9b.png)
+
+1.  Tap the Desktop_Car icon to enter the Bluetooth APP. As shown below.
+
+    ![Screenshot_2019-06-18-13-50-46-46](media/771536096cc98e1142108ab43c00c9a4.png)
+
+1.  ![](media/0360b19a65875ee63ee5bf09f07ec796.jpeg)Done uploading the code to
+    UNO R3 board, connect the Bluetooth module, the LED on the Bluetooth module
+    will flash.   
+    Then tap the option CONNECT on the APP, searching the Bluetooth.
+
+2.  Click to connect the Bluetooth. HMSoft connected, Bluetooth LED will turn on
+    normally.
+
+3.  First read the character of each key on mobile APP via serial port and know
+    the key function. Click the
+    button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)on
+    the APP, buzzer will make a sound “click, click”; release the button, buzzer
+    will turn off.
+
+**For iOS system:**
+
+![IMG_256](media/3d2e9e6a0c4c9b64e5b8098019c99d35.png)
+
+1.  Open the APP store  
+    ![img_0119](media/eeccf6fd30106842b44464a3dc598f0c.png)
+
+1.  Click to search keyestudio, and you will see the keyes BT car.
+
+![img_0123](media/c48189b0b52791b613c779781642411d.png)
+
+1.  Tap to open the keyes BT car
+
+2.  To open Bluetooth, click the “Connect” on the upper left corner, searching
+    and connecting Bluetooth.
+
+![](media/48e7ddbeb652962defd1e715e6c4d8ab.png)
+
+1.  ![图片1](media/17679fd9b5b5dfda9e4eaca957a696ae.png)Tap the Desktop_Car icon
+    to enter the control interface of desktop car.
+
+![{039D13AB-B49A-F721-F216-E4E99AE52804}](media/9f3dd57cf578d9ff05cda0c29260298b.png)
+
+1.  Click the music
+    icon![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+    to open the music control interface.
+
+![IMG_256](media/6d3b0b6ad8d94e7dbb9629f754271795.png)
+
+**Wiring Diagram:**
+
+**![7.1](media/22f641953e64cf6de5b5883a1acc2c81.png)**
+
+**Note:** Stack the motor drive shield onto UNO R3 control board. Connect the
+pin (G、V、S) of power amplifier module to the pin G, 5V, D11(S) of motor drive
+shield with 3P jumper wire. Plug firmly the Bluetooth module
+(RXD、TXD、GND、VCC) into the motor drive shield (TX、RX、-（GND）、+（VCC）).
+Connect the power supply to BAT connector.
+
+**Coding:**
+
+Write the program to know what signal the Bluetooth module sends.
+
+Go to **“Control”**, drag out
+the![](media/df6ea88b09e44f289d54df1e410ad0f9.png)block; and drag
+the![](media/874bf588f9e6f8f07d16461c82dacbab.png)block from **“SerialPort”**
+into the **“setup”** block.
+
+We first click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png); drag the
+block![](media/32e90d25c6828c73e1e336706c88c287.png)from **“SerialPort”** into
+the BLE receiver block just made.
+
+Then go to **“Variables”**, drag out the
+block![](media/03f897f249a5b2ae651f444792d8b58d.png) into the
+block![](media/32e90d25c6828c73e1e336706c88c287.png).
+
+![](media/cf8fe7ce4b8467b25080c01ae6a35a24.png)
+
+Upload the code success, connect Bluetooth module, open serial monitor and set
+the baud rate to 9600. Aimed at Bluetooth module, press the key on the mobile
+APP, and you can see the corresponding control character of key.
+
+![](media/ce9d3b7ef40230c2e98e30ad3c72959c.png)
+
+**Below we have listed each button on the Bluetooth APP and what each button
+features.**
+
+| **APP Buttons**                                                                                                                                                                        | **Functions**                           |                                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | pair and connect HM-10 Bluetooth module |                                                                                                                                                                                               |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | enter Bluetooth control interface       |                                                                                                                                                                                               |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | disconnect the Bluetooth                |                                                                                                                                                                                               |
+| up:![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                    | **Control character**                   | **Function**                                                                                                                                                                                  |
+|                                                                                                                                                                                        | Press: F Release: S                     | Press the button, robot goes front; release to stop forward                                                                                                                                   |
+| down:![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                  | Press: B Release: S                     | Press the button, robot goes back; release to stop backward                                                                                                                                   |
+| left:![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                  | Press: L Release: S                     | Press the button, robot turns left; release to stop                                                                                                                                           |
+| right:![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                 | Press: R Release: S                     | Press the button, robot turns right; release to stop                                                                                                                                          |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Click to send：W                        | Click the button, robot always goes straight at the fastest speed                                                                                                                             |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Click to send：Z                        | Click the button, robot always goes back at the fastest speed                                                                                                                                 |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Press: Q Release: S                     | Pressed, robot rotates to the left                                                                                                                                                            |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Press: E Release: S                     | Pressed, robot rotates to the right                                                                                                                                                           |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Click to send：S                        | Stop all the functions                                                                                                                                                                        |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | -                                       | Click to start the mobile direction sensing control; click again to exit the function                                                                                                         |
+| ![Screenshot_2019-06-18-13-50-46-46](media/771536096cc98e1142108ab43c00c9a4.png)                                                                                                       | Click to send：Y                        | Start the obstacle avoiding function; click Stop to exit the function                                                                                                                         |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | -                                       | Hold the button,and speak to cellphone:Go, desktop car will move forward; release and hold button again to speak: Stop, car will stop; back, go backward; left, turn left; right, turn right. |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Click to send：X                        | Start the line tracking function; click Stop to exit                                                                                                                                          |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | Click to send：U                        | Start the ultrasonic follow function; click Stop to exit                                                                                                                                      |
+| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)                                                                                                       | -                                       | Click to enter the music control interface                                                                                                                                                    |
+| **Click the music icon![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)to enter the music control interface;**  **Music control buttons are as below:** |                                         |                                                                                                                                                                                               |
+| **Buttons**                                                                                                                                                                            | **Control character**                   | **Function**                                                                                                                                                                                  |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 1 Release: S                     | Press to play the tone DO; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 2 Release: S                     | Press to play the tone RE; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 3 Release: S                     | Press to play the tone MI; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 4 Release: S                     | Press to play the tone FA; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 5 Release: S                     | Press to play the tone SO; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 6 Release: S                     | Press to play the tone LA; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 7 Release: S                     | Press to play the tone SI; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: 8 Release: S                     | Press to play the tone DO; release to stop playing                                                                                                                                            |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | Press: P Release: S                     | Press to play a song Happy Birthday; release to stop playing                                                                                                                                  |
+| ![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)                                                                                                       | return to the previous step             |                                                                                                                                                                                               |
+
+We have read the character of each key on mobile APP via serial port and know
+the key function.
+
+Click the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)on
+the APP, buzzer will make a sound “click, click”; release the button, buzzer
+will turn off.
+
+Here we call the condition statement
+block![](media/c9a7861dbafadf717fe400042100acbc.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag
+the![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block ![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png)into the **if** statement,
+and drag out the block![](media/175845c01b3c1d208ffd9bbeadc95d7c.png)from the
+**“Variables”** into the first input box at the left side of “**=**” ; drag
+the![](media/3436492a5976323f853f1b22b6e1c1dd.png)from the **“Text”** into the
+second input box at the right side of “**=**”. when press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “F” to Bluetooth module, Bluetooth module
+will receive the character “F”, so we replace the “a” with “**F**”.
+![](media/9f870648a97d1f083e7f7e22f5fce9d2.png)
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/ce19fa20f242ddd6c6c7f95171faccaf.png)，click the drop-down
+triangle icon to select the frequency **NOTE_A4**.
+
+And go to **“Control”**, drag the delay
+block![](media/97f390ba53713ec9402c0886620216f3.png); set the delay time 200ms.
+
+Click the**“Desktop_Car_V3”**again, drag out the
+block![](media/cdaf7e2511f1374c233f8e0c0fede618.png), and add a delay 200ms.
+
+Duplicate this piece of code once and change the final delay time to 1000ms.
+
+![](media/3684168f4e61435d73898e92aa322a27.png)
+
+**Code:**
+
+![](media/0f010b771f090350946b08efcea025d1.png)We’ve written the complete code.
+Next upload the code success, press and release the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)on
+Bluetooth APP to see the final effect.
+
+Pay close attention that can’t connect the Bluetooth module when upload the
+code, otherwise, code upload fails.
+
+You should upload the code successfully and then plug in the Bluetooth module.
+
+**Result:**
+
+Stack the motor drive shield onto UNO R3 board. Done wiring, connect the UNO R3
+control board to computer’s USB port with USB cable to upload the code.
+
+Make sure you have installed the Bluetooth APP on mobile phone. Power on the
+motor drive shield, Bluetooth indicator flashes and then open mobile APP to
+connect the Bluetooth module.
+
+Bluetooth connected, press the Up button on the Bluetooth APP, buzzer will make
+a sound “click, click” ; release the button, buzzer will switch off.
+
+## Build Bluetooth Control Robot:
+
+![组 1 拷贝](media/881c8601f3f0dfd55db2593966c0bd17.png)
+
+We have read the character of each key on mobile APP via serial port and know
+the key function. And we already learn how to drive the buzzer speaker sound
+using the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)on
+Bluetooth APP.
+
+Based on that, we can extend several buttons to control the motor drive shield
+and other sensor modules on the robot car.
+
+Now get ready to give the robot car an extra function --Bluetooth Remote
+Control!
+
+Based on the designed circuit, we are going to build a Bluetooth remote control
+desktop car.
+
+**![7.2](media/c929a99e7230f7182b7e2145eebf13b9.png)**
+
+**Note:** Stack the motor drive shield onto UNO R3 control board. Plug firmly
+the Bluetooth module (RXD、TXD、GND、VCC) into the motor drive shield
+(TX、RX、-（GND）、+（VCC）). Connect the motor A and motor B to connector A and
+B separately. Connect the power supply to BAT connector.
+
+**Coding:**
+
+Write the program to realize the functions we want. Use the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+and![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+on the Bluetooth APP to navigate the robot go front, back, turn left, turn
+right, stop, rotate to left, rotate to right, go front at the fastest speed, go
+back at the fastest speed.
+
+Go to **“Control”**, drag out
+the![](media/df6ea88b09e44f289d54df1e410ad0f9.png)block; and drag
+the![](media/874bf588f9e6f8f07d16461c82dacbab.png)block from **“SerialPort”**
+into the **“setup”** block.
+
+We click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png); drag the
+block![](media/436f2117dc79daa7bf0cfb81f1f13ba9.png)from **“SerialPort”** into
+the BLE receiver block just made.
+
+Then go to **“Variables”**, drag out the
+block![](media/03f897f249a5b2ae651f444792d8b58d.png) into the
+block![](media/436f2117dc79daa7bf0cfb81f1f13ba9.png).
+
+![](media/5d70938bf99f117e5382ae1505fc0d67.png)
+
+Press any direction button and stop button, the Bluetooth module will receive
+corresponding signal, and robot car will move and stop in the corresponding
+direction.
+
+So here require to make “option” judgement; we will use the
+block![](media/86c719c9f837abbb5ab72813e7020642.png) from **“Control”**.
+
+Drag out the block![](media/86c719c9f837abbb5ab72813e7020642.png), then click
+the blue gear icon, appear the edit
+box![](media/baf37c82c6a8781bfe430dfbbf11037d.png), drag
+the![](media/5679bab3e3398b3cbf7a79373b6045a9.png)block
+into![](media/f592e3bf0d437ef410e2932bcd2c6805.png)block, turning
+into![](media/18009cfb6db3423bf9241b76b6e7dd9d.png).
+
+When the value of the "expression" behind the **switch** block is equal to the
+value of the "constant expression" behind a case block, the statement following
+this **case** is executed.
+
+After executing the statement following a **case**, the process control is
+transferred to the next case to continue execution.
+
+Since the Bluetooth APP has several direction buttons, press the different
+direction buttons to make the robot move in the corresponding direction; press
+stop button, robot car will stop.
+
+So here we set 9 case statements; click the blue gear icon, appear the edit
+box![](media/ea015fe4513ec819c5fb4b9e6f54e32e.png), drag
+the![](media/5679bab3e3398b3cbf7a79373b6045a9.png)block into
+![](media/f592e3bf0d437ef410e2932bcd2c6805.png) block eight times again.
+
+Press the arrow buttons on the APP, robot car will move in the corresponding
+direction.
+
+Go to the **“Variables”** , drag out the
+block![](media/175845c01b3c1d208ffd9bbeadc95d7c.png)into the **switch**
+statement. Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+robot car will go front at a speed of PWM150. Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement.
+Because press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)and
+mobile Bluetooth will send a character “F” to Bluetooth module, Bluetooth module
+will receive the character “F”, so we replace the “a” with “**F**”.
+
+Drag the block![](media/e6132455eefd6dc602e8cab7043e09e0.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM150**.
+
+![](media/215b754f8eb79b49a74106d019e92c38.png)
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “B” to Bluetooth module, Bluetooth module
+receives the character “B”, robot car will go back at a speed of PWM150.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**B**”. Drag the block
+![](media/9cf505462c0785d012b9333c53d7d048.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM150**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “L” to Bluetooth module, Bluetooth module
+receives the character “L”, robot car will turn left.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**L**”. Drag the block
+![](media/7a9fb58fbb2d4b3c517725de218dd552.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “R” to Bluetooth module, Bluetooth module
+receives the character “R”, robot car will turn right.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**R**”. Drag the block
+![](media/0ae47dcfba666f489af9ca0bb21d15e1.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “S” to Bluetooth module, Bluetooth module
+receives the character “S”, robot car will STOP.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**S**”. Drag the block
+![](media/ee667e00a7c7cbd5a7f4dc0205cbb6c5.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “Q” to Bluetooth module, Bluetooth module
+receives the character “Q”, robot car will rotate to left.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**Q**”. Drag the block
+![](media/eb00ce980cb9ebf61caef023628c5ad5.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM100**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “E” to Bluetooth module, Bluetooth module
+receives the character “E”, robot car will rotate to right.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**E**”. Drag the block
+![](media/7339e136aa50d23d85e8b012259201a6.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM100**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “W” to Bluetooth module, Bluetooth module
+receives the character “W”, robot car will go front at the fastest speed of
+PWM255.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**W**”. Drag the block
+![](media/e6132455eefd6dc602e8cab7043e09e0.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM255**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “Z” to Bluetooth module, Bluetooth module
+receives the character “Z”, robot car will go back at the fastest speed of
+**PWM255**.
+
+![](media/444bc3dd9a671743abd6d523d409cbfd.png)Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**Z**”. Drag the block
+![](media/9cf505462c0785d012b9333c53d7d048.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM255**.
+
+![](media/6a895d2ea9c238bc1a26681f55299ee7.png)
+
+We have completed the program to realize the functions we want. Use the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+and![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+on the Bluetooth APP to navigate the robot go front, back, turn left, turn
+right, stop, rotate to left, rotate to right, go front at the fastest speed, go
+back at the fastest speed.
+
+**Code:**
+
+**Note:** Can’t connect the Bluetooth module when upload the code, otherwise,
+code upload fails. You should upload the code successfully, then plug in the
+Bluetooth module.
+
+**Result:**
+
+Stack the motor drive shield onto UNO R3 board. Connect the UNO R3 control board
+to computer’s USB port with USB cable to upload the code. Turn the slide switch
+ON.
+
+Make sure you have installed the Bluetooth APP on mobile phone. Power on the
+motor drive shield, Bluetooth indicator flashes and then open mobile APP to
+connect the Bluetooth module.
+
+Bluetooth connected, we can use Bluetooth APP to randomly navigate the desktop
+car.
+
+Press
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+go forward;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+go backward;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+turn left;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+turn right;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+stop;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+rotate to the left; press
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+rotate to the right; press
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+move forward at the fastest speed; press
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+turn around;
+press![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+start mobile direction sensing control, and tap again this button to exit the
+direction sensing control.
+
+## Project 15: Bluetooth Multi-function Robot
+
+How to build a multi-function robot combined with all the functions we’ve
+learned? In this circuit, we use a complete code to program the smart car to
+navigate the world on its own. Pretty simple and easy to switch different
+functions.
+
+**Hookup Guide**
+
+Pay attention that can’t connect the Bluetooth module when upload the code,
+otherwise, code upload fails.
+
+You should upload the code successfully, then plug in the Bluetooth module.
+
+**![8](media/6a8d76ce62f71661f3fd1c8acbcd280f.png)**
+
+**Note:** stack the motor drive shield onto UNO R3 control board; connect the
+line tracking sensor to motor drive shield’s P1 connector (G, V, D6, D7, D8);
+connect the ultrasonic sensor to motor drive shield’s P2 connector, VCC pin to
+V, Trig pin to digital 13 (S), Echo pin to digital 12 (S), G pin to GND(G);
+
+Connect the pin (G、V、S) of power amplifier module to the pin G, 5V, D11(S) of
+motor drive shield with 3P female-to-female jumper wire;
+
+Connect the left obstacle detector sensor to P3（G、V、A0) connector on the
+motor drive shield; the right obstacle detector sensor to P5（G、V、A2)
+connector;
+
+Connect the infrared receiver sensor to P4（G、V、A1) connector on the motor
+drive shield;
+
+Plug firmly the Bluetooth module (RXD、TXD、GND、VCC) into the motor drive
+shield (TX、RX、-（GND）、+（VCC）). Connect the motor A and motor B to
+connector A and B separately. Connect the power supply to BAT connector.
+
+**Coding:**
+
+Go to **“Control”**, drag out
+the![](media/df6ea88b09e44f289d54df1e410ad0f9.png)block; and drag
+the![](media/874bf588f9e6f8f07d16461c82dacbab.png)block from **“SerialPort”**
+into the **“setup”** block.
+
+We click the imported library**“Desktop_Car_V3”**, drag out the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png); drag the
+block![](media/436f2117dc79daa7bf0cfb81f1f13ba9.png)from **“SerialPort”** into
+the BLE receiver block just made.
+
+Then go to **“Variables”**, drag out the
+block![](media/03f897f249a5b2ae651f444792d8b58d.png) into the
+block![](media/436f2117dc79daa7bf0cfb81f1f13ba9.png).
+
+![](media/5d70938bf99f117e5382ae1505fc0d67.png)
+
+Press any direction button and stop button, the Bluetooth module will receive
+corresponding signal, and robot car will move and stop in the corresponding
+direction.
+
+So here require to make “option” judgement; we will use the
+block![](media/86c719c9f837abbb5ab72813e7020642.png) from **“Control”**.
+
+Drag out the block![](media/86c719c9f837abbb5ab72813e7020642.png), then click
+the blue gear icon, appear the edit
+box![](media/baf37c82c6a8781bfe430dfbbf11037d.png), drag
+the![](media/5679bab3e3398b3cbf7a79373b6045a9.png)block
+into![](media/f592e3bf0d437ef410e2932bcd2c6805.png)block, turning
+into![](media/18009cfb6db3423bf9241b76b6e7dd9d.png).
+
+When the value of the "expression" behind the **switch** block is equal to the
+value of the "constant expression" behind a case block, the statement following
+this **case** is executed.
+
+After executing the statement following a **case**, the process control is
+transferred to the next case to continue execution.
+
+Since the Bluetooth APP has several direction buttons, stop button, and button
+for obstacle avoiding, line tracking, ultrasonic follow function, press the
+different direction buttons to make the robot move in the corresponding
+direction and start different functions.
+
+So here we set 12 case statements; click the blue gear icon, appear the edit
+box![](media/ea015fe4513ec819c5fb4b9e6f54e32e.png), drag
+the![](media/5679bab3e3398b3cbf7a79373b6045a9.png) block into
+![](media/f592e3bf0d437ef410e2932bcd2c6805.png) block eleven times again.
+
+**Press the arrow buttons on the APP, robot car will move in the corresponding
+direction.**
+
+Go to the **“Variables”** , drag out the
+block![](media/175845c01b3c1d208ffd9bbeadc95d7c.png)into the **switch**
+statement. Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+robot car will go front at a speed of PWM200. Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement.
+Because press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)and
+mobile Bluetooth will send a character “F” to Bluetooth module, Bluetooth module
+will receive the character “F”, so we replace the “a” with “**F**”.
+
+Drag the block![](media/e6132455eefd6dc602e8cab7043e09e0.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM200**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “B” to Bluetooth module, Bluetooth module
+receives the character “B”, robot car will go back at a speed of PWM200.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**B**”. Drag the block
+![](media/9cf505462c0785d012b9333c53d7d048.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM200**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “L” to Bluetooth module, Bluetooth module
+receives the character “L”, robot car will turn left.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**L**”. Drag the block
+![](media/7a9fb58fbb2d4b3c517725de218dd552.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “R” to Bluetooth module, Bluetooth module
+receives the character “R”, robot car will turn right.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**R**”. Drag the block
+![](media/0ae47dcfba666f489af9ca0bb21d15e1.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “S” to Bluetooth module, Bluetooth module
+receives the character “S”, robot car will STOP.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**S**”. Drag the block
+![](media/ee667e00a7c7cbd5a7f4dc0205cbb6c5.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement. Because Bluetooth module
+receives a character “S”, buzzer in the power amplifier module will make a
+sound, so here we need to drag the
+block![](media/23b72985287fdd854180c6016b440de6.png) from**“Desktop_Car_V3”**to
+turn off buzzer.
+
+![](media/db8adc3b820b6646cc3eef9b9836d969.png)
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “Q” to Bluetooth module, Bluetooth module
+receives the character “Q”, robot car will rotate to left.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**Q**”. Drag the block
+![](media/eb00ce980cb9ebf61caef023628c5ad5.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM200**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “E” to Bluetooth module, Bluetooth module
+receives the character “E”, robot car will rotate to right.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**E**”. Drag the block
+![](media/7339e136aa50d23d85e8b012259201a6.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM200**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “W” to Bluetooth module, Bluetooth module
+receives the character “W”, robot car will go front at the fastest speed of
+PWM255.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**W**”. Drag the block
+![](media/e6132455eefd6dc602e8cab7043e09e0.png)from
+the**“Desktop_Car_V3”**beneath the **case** statement and change the PWM0 to
+**PWM255**.
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “Z” to Bluetooth module, Bluetooth module
+receives the character “Z”, robot car will go back at the fastest speed of
+PWM255.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**Z**”.
+
+![](media/5df07d81d59a04a24b817b8c1a72cc7d.png)
+
+Then write the program for robot backward. Go to **“Functions”**, we drag out
+the block![](media/924e68839a4b0d7aeeb1f7391c6c39b3.png) and name it
+as![](media/e85499e33492469042738ac005e80411.png). Go to**“Desktop_Car_V3”**,
+drag out the block![](media/e6132455eefd6dc602e8cab7043e09e0.png)into the
+block![](media/e85499e33492469042738ac005e80411.png)and delay **200ms**;
+followed by drag out the ![](media/eb00ce980cb9ebf61caef023628c5ad5.png)and add
+a delay **700ms**; then duplicate the block
+![](media/e6132455eefd6dc602e8cab7043e09e0.png)once and change the PWM0 to
+**PWM255**.
+
+And go to **“Variables”** , we drag out the
+block![](media/cad98e72186cd1eac2fdd7753ecd6fe8.png), and drag out the
+block![](media/93a2bfd1ce36586e5da4c107e10dadf5.png)from **“Math”** into the
+block![](media/cad98e72186cd1eac2fdd7753ecd6fe8.png) and assign the value 0.
+
+In such way, the robot can move back once.
+
+![](media/2f783778258c9f4e4d0487d6dc90a9f3.png)
+
+Again go to **“Functions”**, we drag out the
+block![](media/717b4398c06b853950633d73e1eeb6e4.png)into the main program **case
+‘Z’**
+
+We have completed the program to realize the functions that use the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、
+![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)、![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+and![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)
+on the Bluetooth APP to navigate the robot go front, back, turn left, turn
+right, stop, rotate to left, rotate to right, go front at the fastest speed, go
+back at the fastest speed.
+
+![](media/5e2d440dc8f48af973304dd0c573cc76.png)
+
+**Next write the program for ultrasonic follow, line tracking, obstacle avoiding
+function.**
+
+Click the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “U” to Bluetooth module, Bluetooth module
+receives the character “U”, the robot car will start ultrasonic following
+function.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**U**”.
+
+**Move on to write the code string for ultrasonic following.**
+
+Go to **“Functions”**, we drag out the
+block![](media/924e68839a4b0d7aeeb1f7391c6c39b3.png) and name it
+as![](media/1e5c3af49f9a5ab0495e4d629177f6b4.png).
+
+**Here need to set up a variable.**
+
+First go to **“Variables”**, drag out the
+block![](media/8b90085dadba20a807e96d3a3a8a693e.png); then drag the
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)from “Math” into value
+behind; replace “item” with “flag”, and default as an integer, assign the
+variable “flag” to 0.
+
+Then drag this
+block![](media/fa9748467e0e2b64427ac1c2a9e95acd.png)into![](media/3c77ea854879063cb6c6489e75ac94ab.png)block,
+so that set up a variable block![](media/5c3f531265b52cfe36b966745de1d800.png).
+
+Now go to **“Variables”**, drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)into the
+block![](media/1e5c3af49f9a5ab0495e4d629177f6b4.png) and assign a value 0.
+
+Go to **“Control”**, drag out the
+block![](media/95e82c73112f2aa5495bfaef192002ae.png)into the
+block![](media/d7d3a0f6078e91e8a3f5419abe78f42e.png). Go to **“Logic”**, drag
+the block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png) into the repeat while
+block![](media/95e82c73112f2aa5495bfaef192002ae.png). And drag the variable
+block![](media/5c3f531265b52cfe36b966745de1d800.png)into the first input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag a
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)into the second input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and keep the digit 0.
+
+![](media/3b40436e1a00a832721fb58a62f15c54.png)
+
+**Followed by set up three variables, “distance”, “sensor_L”and “sensor_R”.**
+
+The variable “distance” means save the distance value measured by ultrasonic
+sensor; “sensor_L”and “sensor_R” respectively save the distance value detected
+by the left and the right obstacle detector sensor.
+
+Click **“Variables”**, drag out the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png); and drag the
+block![](media/e4ca6cf968f2bcc710de5bc2813d5027.png)from **“Math”** into the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png). Then duplicate the
+block![](media/4e2b717f74fbaf4c949a265bf8195ac1.png)twice; respectively change
+“item”into“distance”、“sensor_L”and“sensor_R”; set the value to 0.
+
+![](media/638376eb0c99baa89710cc5062392eb8.png)
+
+Click **“Variables”**, drag out the
+block![](media/91307dcf44ad5e920649ea888fb8a4da.png)into the do
+block![](media/48756738c6a527fbb81f041d7c246b2f.png); and drag the block
+
+![](media/e05dc6f5599fb88a04682d0f967f3133.png)from**“Desktop_Car_V3”**into the
+block![](media/91307dcf44ad5e920649ea888fb8a4da.png).
+
+And click **“Variables”**again, drag out the
+block![](media/f3534097fd323e1a59396774dab47e44.png), and go to drag the
+block![](media/a9045831fe232af5a34b9929a100b02e.png)from**“Desktop_Car_V3”**into
+the block![](media/f3534097fd323e1a59396774dab47e44.png); then duplicate this
+code string once, change“sensor_L”to“sensor_R”, click the drop-down triangle to
+select“right_infrared_avoid”.
+
+![](media/2ea5cea7fa67d9e2e08ef30882a73c0c.png)
+
+Next judge whether the ultrasonic sensor detects front obstacle or the left and
+the right obstacle detector module detects obstacle. Here we can use the
+judgement statement **“if...do...else if...do...”** .
+
+When the front obstacle distance detected by ultrasonic sensor is smaller than
+or equal to 5cm, and both obstacle detector modules detect obstacle, the robot
+will go back at a speed of PWM200.
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/ac23ad3f6d553ce9a4a087a7dea1f486.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block five times. So you can
+get the block:
+
+![](media/72f38592b5396c63063167a2e0ad4cef.png)
+
+Next, go to **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png)and
+change**“=”**into**“≤”**; go to **“Variables”**, drag out the
+block![](media/05d2b5a65dc70b57437949fea8ba600e.png) into the first input box at
+the left side of “**≤**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**≤**” ; change the value 0 to 5; like
+this:![](media/19947600dbb5951c052a5b6e7dd05a38.png) (note the value 5 can be
+set flexibly).
+
+We duplicate the distance block twice, and change the
+variable![](media/05d2b5a65dc70b57437949fea8ba600e.png)
+to![](media/3160dd2e610ce2ce25fc4cfabfa636cc.png),![](media/9ad6555ba26950fc106e9483fe4e9eef.png),
+and change the**“≤”**into**“=”**;
+
+We have mentioned before that the obstacle detector module detects obstacle,
+output LOW digital signal 0; detects no obstacle, output HIGH digital signal 1.
+So here change the value 5 to 0. like this:
+
+![](media/2e54e375eb5a8e050f1ff589b82a3750.png),![](media/abef079f1ed387ba57822e04b46e860b.png)
+
+Think back, we use the two words “or”, “and ” when describe the judgement
+statement. There are two blocks in **“Logic”** to represent either one of two
+conditions happens or both of them happen at the same time, that
+is![](media/aba13148e17d87f2cbfbe8b4256ab410.png),
+![](media/eea59977188f7ea2066b04a28304ed4c.png).
+
+Drag out the block![](media/eea59977188f7ea2066b04a28304ed4c.png) and click the
+drop-down triangle to select “or” and can get the
+block![](media/aba13148e17d87f2cbfbe8b4256ab410.png).
+
+Drag the block![](media/eea59977188f7ea2066b04a28304ed4c.png) into
+block![](media/aba13148e17d87f2cbfbe8b4256ab410.png) to make
+as![](media/7e5b25d819b337b199d52f783154a0cb.png).
+
+Then drag the block![](media/19947600dbb5951c052a5b6e7dd05a38.png)into the first
+input box of or block![](media/7e5b25d819b337b199d52f783154a0cb.png); drag the
+block
+![](media/2e54e375eb5a8e050f1ff589b82a3750.png)and![](media/abef079f1ed387ba57822e04b46e860b.png)respectively
+into the input box of and block![](media/7e5b25d819b337b199d52f783154a0cb.png).
+So can get the block![](media/e425e2855ed12ee068b02110778ed599.png) and drag it
+behind to the **if** statement.
+
+This means the judgment condition is when the centre obstacle distance detected
+by ultrasonic sensor is smaller than or equal to 5cm, or both the left and the
+right obstacle detector module detect obstacle.
+
+Followed by drag out the
+block![](media/0f1b6fcea638f56b3b6ef765cd8293a3.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Now we have finished the program. When the front obstacle distance detected by
+ultrasonic sensor is smaller than or equal to 5cm, and both obstacle detector
+modules detect obstacle, the robot will go back at a speed of PWM200.
+
+![](media/f45af89fb0574fe32677fde67d378f1e.png)
+
+We now move on to write the program. When the front obstacle distance detected
+by ultrasonic sensor is greater than 5cm, and the left obstacle detector module
+detects obstacle and the right one didn’t detect obstacle, the robot will rotate
+to left at a speed of PWM200.
+
+Duplicate the block![](media/e425e2855ed12ee068b02110778ed599.png)once and drag
+into the first **else if** statement; set to **distance＞5 and val_L=0 and
+val_R=1**
+
+![](media/d54e2863406f1950dc0a03e90853bac0.png)
+
+Drag out the
+block![](media/7a9492c4fb1b6464273018df8dcd313a.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Next write the program that the front obstacle distance detected by ultrasonic
+sensor is greater than 5cm, and the left obstacle detector module didn’t detect
+obstacle and the right one detects obstacle, the robot will rotate to right at a
+speed of PWM200.
+
+Duplicate the block![](media/d54e2863406f1950dc0a03e90853bac0.png)once and drag
+into the second **else if** statement; set to **distance＞5 and val_L=1 and
+val_R=0**
+
+![](media/3874c60d48c3f83375d878d18d07c006.png)
+
+Drag out the
+block![](media/4a41e4c8cb630f9846ea683f3a6a1171.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+![](media/ecdbf6cda323d866ca176c40955a147f.png)
+
+Move on to write the program. When the front obstacle distance detected by
+ultrasonic sensor is greater than 5cm, and smaller than or equal to 15cm, and
+both obstacle detector modules didn’t detect obstacle, the robot will stop
+running.
+
+Go to **“Logic”**, drag out the
+block![](media/00c8e7dffb9e23776d0957ac34e069bc.png); duplicate the
+block![](media/6b42dde6ad79672a62127768085661a0.png)once and set to
+**“distance≤15”**; then separately drag the
+block![](media/6b42dde6ad79672a62127768085661a0.png)and![](media/eba0cfe42fe8c9bd4991acc5915422fd.png)into
+the input box of block![](media/00c8e7dffb9e23776d0957ac34e069bc.png), like
+this:![](media/ce10c4d1b6bb6004c137877239db7d29.png).
+
+And again drag out the block![](media/00c8e7dffb9e23776d0957ac34e069bc.png),
+then drag the block![](media/ce10c4d1b6bb6004c137877239db7d29.png) into the
+first input box of block![](media/00c8e7dffb9e23776d0957ac34e069bc.png);
+duplicate the block![](media/a146a1ffe93d8dfc7e6668d2c8bdbed4.png) once and drag
+it into the second input box of
+block![](media/00c8e7dffb9e23776d0957ac34e069bc.png)and change “val_R=0” into
+“val_R=1”.
+
+![](media/b1dd01e41c67c60df8219081d43f3009.png)
+
+Now drag the block![](media/b1dd01e41c67c60df8219081d43f3009.png)into the third
+**else if** statement. Drag out the
+block![](media/f975edb654b797b35120c5630d89f735.png)from**“Desktop_Car_V3”**into
+the **do** statement.
+
+Next it’s easy to write the program. When the front obstacle distance detected
+by ultrasonic sensor is greater than 15cm, and smaller than or equal to 35cm,
+and both obstacle detector modules didn’t detect obstacle, the robot will go
+front at a speed of PWM255.
+
+Direct duplicate the block![](media/b1dd01e41c67c60df8219081d43f3009.png) once
+and change to **distance＞15 and distance≤35**, and drag it into the fourth
+**else if** statement.
+
+Drag out the
+block![](media/d342c0ecdae2b7a9805ab1648ad26d0d.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to 255.
+
+Finally write the program. When the front obstacle distance detected by
+ultrasonic sensor is greater than 35cm, and both obstacle detector modules
+didn’t detect obstacle, the robot will stop running.
+
+Duplicate the code block![](media/3874c60d48c3f83375d878d18d07c006.png)once and
+drag it into the fifth **else if** statement. Change to **distance＞35 and
+val_L=1 and val_R=1**
+
+Drag out the
+block![](media/f975edb654b797b35120c5630d89f735.png)from**“Desktop_Car_V3”**into
+the **do** statement.
+
+![](media/95f5b59436c90ea07d5578b2bee95430.png)
+
+Click the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+the robot car will exit the ultrasonic follow function.
+
+We drag out the block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png)into the
+repeat while block![](media/7adf54405634f627b84590b441319eff.png) .
+
+Then go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png)into the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png). And drag out the
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)from **“Math”** into the
+**if** statement. Then drag the
+block![](media/c5031cd56db0a3d9b7aa16c8cc81ef42.png)from the **“Variables”** 
+into the first input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag
+the block![](media/a4e2e4341488859ab940e0601973d55c.png)from the **“Text”** into
+the second input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and change
+the “a” into “S”.
+
+Go to **“Variables”**，drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png) into the **do** block
+![](media/be710f6663a5414c8190d404fe6f4c7b.png); and drag out the
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)from **“Math”** into the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)and change value 0 into 1.
+
+![](media/1ff0b25676b3d416609d836ea16dd1a3.png)
+
+Finally, go to **“Functions”**, we drag out the
+block![](media/c0c8601505285252cd08f9e330dfc420.png)into the main program **case
+‘U’**
+
+![](media/9d8e25bee4ad1dcc7761968c97026170.png)
+
+Now the program for following robot is finished！
+
+**Move on to write the code string for line tracking function.**
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “X” to Bluetooth module, Bluetooth module
+receives the character “X”, robot car will go front at the fastest speed of
+PWM255.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**X**”.
+
+Then write the program for robot line tracking. Go to **“Functions”**, we drag
+out the block![](media/924e68839a4b0d7aeeb1f7391c6c39b3.png) and name it
+as![](media/91836be637938ce84104cbda91d44ad5.png).
+
+Go to **“Variables”**, drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)into the
+block![](media/91836be637938ce84104cbda91d44ad5.png) and assign a value 0.
+
+Go to **“Control”**, drag out the
+block![](media/95e82c73112f2aa5495bfaef192002ae.png)into the
+block![](media/91836be637938ce84104cbda91d44ad5.png). Go to **“Logic”**, drag
+the block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png) into the repeat while
+block![](media/95e82c73112f2aa5495bfaef192002ae.png). And drag the variable
+block![](media/5c3f531265b52cfe36b966745de1d800.png)into the first input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag a
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)into the second input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and keep the digit 0.
+
+![](media/957b8a78738fb9feb2f0e61ea9c75218.png)
+
+**Followed by set up three variables, “val_L”, “val_C” and “val_R” ;**
+
+These three variables respectively save the obstacle signal measured by the
+left, middle and the right line tracking sensor.
+
+Click **“Variables”**, drag out the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png); and drag the
+block![](media/e4ca6cf968f2bcc710de5bc2813d5027.png)from **“Math”** into the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png). Then duplicate the
+block![](media/4e2b717f74fbaf4c949a265bf8195ac1.png)twice; respectively change
+“item”into“val_L”, “val_C” and “val_R”.
+
+![](media/6a74a7bb2f396e86b77cf78e2e776b30.png)
+
+Click **“Variables”**, drag out the
+block![](media/dacdfdcde1207fa6cf579363753a4358.png)into the do
+block![](media/48756738c6a527fbb81f041d7c246b2f.png); and drag the block
+
+![](media/1c7c77c56af06e46c04a6052ffc628e2.png)from**“Desktop_Car_V3”**into the
+block![](media/dacdfdcde1207fa6cf579363753a4358.png), like this
+![](media/8f9581c8ee9df846cedbe9be79e2a59e.png);
+
+then duplicate this code string twice, change“val_L”to“val_C” and “val_R”, click
+the drop-down triangle to select “center_tracking” and “right_tracking”.
+
+![](media/6c7128988fd091aab3d5195ac37dfe84.png)
+
+The line tracking sensor detects white, output LOW 0; detecting black, output
+HIGH 1.
+
+To judge whether the left, the center and the right tracking sensor detect black
+line, if the center tracking sensor detects black line, the robot will go front
+at a speed of PWM200.
+
+Here we can use the condition
+statement![](media/8349bbb9276453f897c515b0852df94a.png)or
+![](media/80341defb6a4352c57767dbafe48f1d4.png). But the
+block![](media/80341defb6a4352c57767dbafe48f1d4.png)is
+[more](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;)
+[efficient](F:/Dict/8.5.3.0/resultui/html/index.html#/javascript:;) than
+![](media/537643f5a9dbb4de231a4f85ecb31e58.png).
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png)into the
+block![](media/99e4f66d0da8419960272821a0585a0e.png), then click the blue gear
+icon, appear the edit box, drag
+the![](media/13f70d0ae132abd39bbff86861a6a0fb.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block. So you can get the
+block ![](media/80341defb6a4352c57767dbafe48f1d4.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png)into the **if** statement,
+and drag out the block![](media/9484d2b81baefe34a530250a6733c6d0.png)from the
+**“Variables”** into the first input box at the left side of “**=**” ; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” and change the value to 1 ;
+
+Drag out the
+block![](media/e7688706456ac58c0675bb0ac029ef6f.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to PWM200.
+
+![](media/f0420dc631333db9a6f4668c2c480222.png)
+
+Or else, in the case that the center tracking sensor detects white line, if the
+left tracking sensor detects black line and the right tracking sensor detects
+white line, the robot will rotate to left at a speed of PWM200; if the left
+tracking sensor detects white line and the right tracking sensor detects black
+line, the robot will rotate to right at a speed of PWM200.
+
+Here we can use the condition statement **“if...do...else if...do...else”**
+
+Go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png), then click the blue gear
+icon, appear the edit box, drag
+the![](media/8c92dad80422ac98c292ec996b191018.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block then drag
+the![](media/13f70d0ae132abd39bbff86861a6a0fb.png) beneath the
+block![](media/6c558f80b7026b06c8fad16d875ad7fd.png). So you can get the
+block![](media/d0c9d97e8147ecd172d4e9af864c56e0.png); then drag this block
+beneath the else block![](media/169bb179fa218172183155da11250a20.png).
+
+Next, go to the **“Logic”**, drag out the
+block![](media/6a1c89a4814740e276514180994c57d5.png), and drag out the
+block![](media/20df16c0f5e41513afce0a949c3af82b.png)from the **“Variables”**
+into the first input box at the left side of “**=**” ; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” and change the value to 1 ; like
+this: ![](media/2bdf807697ad8d421c06a2e68cbf0290.png)
+
+We duplicate this block![](media/2bdf807697ad8d421c06a2e68cbf0290.png)once, and
+change to![](media/f929af1d6d7e703e1ed26b0e7c13177c.png)and change the value to
+0\. ![](media/8aa2eda3bca0f67a8cabd17d481eb454.png)
+
+And again go to the **“Logic”**, drag out the
+block![](media/c400068e89cf5f4031bbffe808916f26.png) into the **if** statement;
+respectively drag the block ![](media/2bdf807697ad8d421c06a2e68cbf0290.png) and
+![](media/8aa2eda3bca0f67a8cabd17d481eb454.png)into the input box of
+block![](media/c400068e89cf5f4031bbffe808916f26.png).
+
+![](media/086b7de7545da24bef0ace641333c6da.png)
+
+Drag out the
+block![](media/7c87f7c8d62ffef929937d4fe13719ef.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to **PWM200**.
+
+Next duplicate the block![](media/086b7de7545da24bef0ace641333c6da.png)once and
+drag it into **else if** statement; change to **“val_L=0 and val_R=1”**
+
+![](media/33dc4929d686e06a27bd5c0d978f49cf.png)
+
+Drag out the
+block![](media/b1ac68bde23816e540af87545422f5af.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to **PWM200**.
+
+![](media/5dfb7969fd7f6de355e6e8716600e69b.png)
+
+In the case that the center tracking sensor detects white line, if the left
+tracking sensor detects white line and the right tracking sensor detects white
+line, the robot will stop running; if the left tracking sensor detects black
+line and the right tracking sensor detects black line, the robot will stop
+running.
+
+Drag out the
+block![](media/908022603a7e4720da47f13dc37de441.png)from**“Desktop_Car_V3”**into
+the **else** statement.
+
+Click the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+the robot car will exit the line tracking function.
+
+We drag out the block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png)into the
+repeat while block![](media/7adf54405634f627b84590b441319eff.png) .
+
+Then go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png)into the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png). And drag out the
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)from **“Math”** into the
+**if** statement. Then drag the
+block![](media/c5031cd56db0a3d9b7aa16c8cc81ef42.png)from the **“Variables”** 
+into the first input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag
+the block![](media/a4e2e4341488859ab940e0601973d55c.png)from the **“Text”** into
+the second input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and change
+the “a” into “S”.
+
+Go to **“Variables”**，drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png) into the **do** block
+![](media/be710f6663a5414c8190d404fe6f4c7b.png); and drag out the
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)from **“Math”** into the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)and change value 0 into 1.
+
+![](media/3f2847d9bcd7a488f1ea3fabf3fd44aa.png)
+
+Finally，go to **“Functions”**, we drag out the
+block![](media/d39e12c8de00963c39072321d96fae36.png)into the main program **case
+‘X’**
+
+![](media/eebb25872b8f8d88b4970b5fba688b5a.png)
+
+Now the program for line tracking robot is finished！
+
+**Move on to write the code string for obstacle avoiding function.**
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+mobile Bluetooth will send a character “Y” to Bluetooth module, Bluetooth module
+receives the character “Y”, robot car will go front at the fastest speed of
+PWM255.
+
+Go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**Y**”.
+
+Then write the program for robot avoiding obstacle. Go to **“Functions”**, we
+drag out the block![](media/924e68839a4b0d7aeeb1f7391c6c39b3.png) and name it
+as![](media/35c616be8b7b8fb93385af9a87475090.png).
+
+Go to **“Variables”**, drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)into the
+block![](media/35c616be8b7b8fb93385af9a87475090.png) and assign a value 0.
+
+Go to **“Control”**, drag out the
+block![](media/95e82c73112f2aa5495bfaef192002ae.png)into the
+block![](media/35c616be8b7b8fb93385af9a87475090.png). Go to **“Logic”**, drag
+the block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png) into the repeat while
+block![](media/95e82c73112f2aa5495bfaef192002ae.png). And drag the variable
+block![](media/5c3f531265b52cfe36b966745de1d800.png)into the first input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag a
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)into the second input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and keep the digit 0.
+
+![](media/029c41bc0ec8ff7cbc3805a4eaa920e8.png)
+
+Click **“Variables”**, drag out the
+block![](media/91307dcf44ad5e920649ea888fb8a4da.png)into the
+block![](media/48756738c6a527fbb81f041d7c246b2f.png); and drag the
+block![](media/e05dc6f5599fb88a04682d0f967f3133.png) from**“Desktop_Car_V3”**
+into the block![](media/91307dcf44ad5e920649ea888fb8a4da.png).
+
+And again click **“Variables”**, drag out the
+block![](media/f3534097fd323e1a59396774dab47e44.png); go to drag the
+block![](media/a9045831fe232af5a34b9929a100b02e.png)from**“Desktop_Car_V3”**into
+the block![](media/f3534097fd323e1a59396774dab47e44.png); then duplicate this
+code string once, change“sensor_L”to“sensor_R”, click the drop-down triangle to
+select“right_infrared_avoid”.
+
+![](media/260d11e9efd696a2508178e95c4a5887.png)
+
+Next judge whether the ultrasonic sensor detects front obstacle or the left and
+the right obstacle detector module detects obstacle. Here we can use the
+judgement statement **“if...do...else if...do...”** .
+
+First write the program. No matter how far the front obstacle detected by
+ultrasonic sensor, as long as both the left and the right obstacle detector
+module detect obstacle, the robot will turn back for one second at a speed of
+PWM150, and then turn left for 0.5 second at a speed of PWM200.
+
+Go to **“Control”**, drag and drop the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png)into the **do** statement of
+block![](media/48756738c6a527fbb81f041d7c246b2f.png), then click the blue gear
+icon, appear the edit box, drag the
+![](media/ac23ad3f6d553ce9a4a087a7dea1f486.png) block
+into![](media/814d4955711997fae9302b18d65b10f3.png)block four times. So you can
+get the block:
+
+![](media/a0b070b349cc2eba7cecdcea098c039f.png)
+
+Next, go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png); go to **“Variables”**,
+drag out the block![](media/6bef9a7c94d2917d179fd589b11ab362.png) into the first
+input box at the left side of “**=**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**=**” ; change the value 0 to 5; like
+this:![](media/c28f27e2eacfdb329857bf1b6d60d21f.png).
+
+We duplicate this block once, and change the
+variable![](media/6bef9a7c94d2917d179fd589b11ab362.png)
+to![](media/f67438ac49dce3d4a7666e33450ae95c.png); like
+this:![](media/156c3e594e21f8144a2b37b902bbadcf.png)
+
+And again go to **“Logic”**, drag the
+block![](media/ff520baa20f455f5d20d7345e1587d6e.png)into the **if** statement,
+then drag the block![](media/c28f27e2eacfdb329857bf1b6d60d21f.png)and
+![](media/156c3e594e21f8144a2b37b902bbadcf.png) into the input box of
+block![](media/ff520baa20f455f5d20d7345e1587d6e.png).
+
+![](media/ab1577daab8859b565095cc326ec7f94.png)
+
+Drag out the
+block![](media/dc17545c7ef89d7c84fe86774baf9858.png)from**“Desktop_Car_V3”**into
+the **do** statement, and set the value to **PWM150**. And add a delay block in
+**1000ms**.
+
+Then drag out the block![](media/3719440b8d42739308f0c2fff055f693.png)into the
+**do** statement, and set the value to **PWM200**. And add a delay block in
+**500ms**.
+
+Till now we have made a piece of code like below:
+
+![](media/68ba59cd793e282b8ef3344814353725.png)
+
+We now move on to write the program. No matter how far the front obstacle
+detected by ultrasonic sensor, the left obstacle detector module didn’t detect
+obstacle and the right one detects obstacle, the robot will rotate to left at a
+speed of PWM200; the left obstacle detector module detects obstacle and the
+right one didn’t detect obstacle, the robot will rotate to right at a speed of
+PWM200.
+
+Duplicate the block![](media/ab1577daab8859b565095cc326ec7f94.png)once and drag
+into the first **else if** statement; set to **val_L=1 and val_R=0**
+
+Drag out the
+block![](media/7a9492c4fb1b6464273018df8dcd313a.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Duplicate the block![](media/ab1577daab8859b565095cc326ec7f94.png)once again and
+drag into the second **else if** statement; set to **val_L=0 and val_R=1**
+
+Drag out the
+block![](media/1af28ad8ad27dffd206988054b5f92c9.png)from**“Desktop_Car_V3”**
+into the **do** statement; change the PWM0 into **PWM200**.
+
+![](media/ee48321cd4a75241da49bfdb42f349aa.png)
+
+We continue to write the program. When the front obstacle distance detected by
+ultrasonic sensor is smaller than or equal to 10cm, and both obstacle detector
+modules didn’t detect obstacle, the robot will rotate to right at a speed of
+PWM200. When the front obstacle distance detected by ultrasonic sensor is
+greater than 10cm, and the left obstacle detector module detects obstacle and
+the right one didn’t detect obstacle, the robot will go front at a speed of
+PWM200.
+
+go to **“Logic”**, drag the
+block![](media/6a1c89a4814740e276514180994c57d5.png)and select**“≤”**; go to
+**“Variables”**, drag out the
+block![](media/05d2b5a65dc70b57437949fea8ba600e.png) into the first input box at
+the left side of “**≤**”; drag
+the![](media/d8dde88b00f9d4a598649265d432a085.png)from the **“Math”** into the
+second input box at the right side of “**≤**” ; change the value 0 to 10; like
+this:![](media/94b08fda8449c8519873568da66d33a9.png)
+
+Drag out the block![](media/eea59977188f7ea2066b04a28304ed4c.png) into the third
+**else if** statement; drag the
+block![](media/94b08fda8449c8519873568da66d33a9.png)into the first input box of
+block![](media/eea59977188f7ea2066b04a28304ed4c.png); duplicate the
+block![](media/1e735f1975bcab59d2dc426964764f9b.png)once and drag it into the
+second input box of block![](media/eea59977188f7ea2066b04a28304ed4c.png); set to
+**val_L=1 and val_R=1**
+
+![](media/d7ee6253476ba300abe555a3bc2943bb.png)
+
+Drag out the
+block![](media/1af28ad8ad27dffd206988054b5f92c9.png)from**“Desktop_Car_V3”**into
+the **do** statement; change the PWM0 into **PWM200**.
+
+Then duplicate the block![](media/d7ee6253476ba300abe555a3bc2943bb.png)once and
+drag it into the fourth **else if** statement; change to **distance＞10**, and
+drag out the block![](media/a7018d72543389a8c511cc8ea497c58a.png)into the **do**
+statement; change the PWM0 into **PWM200**.
+
+![](media/28dacf47adf69c44a8e9496cf6617ba2.png)
+
+Click the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png),
+the robot car will exit the line tracking function.
+
+We drag out the block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png)into the
+repeat while block![](media/7adf54405634f627b84590b441319eff.png) .
+
+Then go to **“Control”**, drag out the
+block![](media/fb26742d1f68e2644145868c41e9ae6e.png)into the
+block![](media/3c342f2c85c3567123cad9f7c8aa6ce0.png). And drag out the
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)from **“Math”** into the
+**if** statement. Then drag the
+block![](media/c5031cd56db0a3d9b7aa16c8cc81ef42.png)from the **“Variables”** 
+into the first input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag
+the block![](media/a4e2e4341488859ab940e0601973d55c.png)from the **“Text”** into
+the second input box of![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)and change
+the “a” into “S”.
+
+Go to **“Variables”**，drag out the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png) into the **do** block
+![](media/be710f6663a5414c8190d404fe6f4c7b.png); and drag out the
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)from **“Math”** into the
+block![](media/ae1cb4125ddc51e85c8d2cd753d64f52.png)and change value 0 into 1.
+
+![](media/8c02b475ccb372381730f4280f0c6fe4.png)
+
+Finally, go to **“Functions”**, we drag out the
+block![](media/aba98bb3d73057b3ce3347e703e3c676.png)into the main program **case
+‘Y’**
+
+Now the program for obstacle avoiding robot is finished！
+
+![](media/91e787a66a344e17462fa4ac5139eb58.png)
+
+**Move on to make the buzzer in power amplifier module play a tune “do re mi fa
+so la si do” and then play a specific song.**
+
+Press the
+button![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)on
+the APP to enter the music interface; press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+mobile Bluetooth will send a character “1” to Bluetooth module, Bluetooth module
+receives the character “1”, buzzer will play a tone of NOTE_C4.
+
+For the main program, go to **“Text”** , drag the
+block![](media/3436492a5976323f853f1b22b6e1c1dd.png)into **case** statement,
+replacing the “a” with “**1**”.
+
+Click the**“Desktop_Car_V3”**, drag out the
+block![](media/ce19fa20f242ddd6c6c7f95171faccaf.png)，click the drop-down
+triangle icon to select the frequency **NOTE_C4**.
+
+Duplicate this piece of code seven times and click the drop-down triangle icon
+to separately select the frequency
+**NOTE_D4、NOTE_E4、NOTE_F4、NOTE_G4、NOTE_A4、NOTE_B4、NOTE_C5**.
+
+![](media/bf4a69708598e8da63405a9d1a96dba3.png)
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “2”, buzzer will play a tone of NOTE_D4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “3”, buzzer will play a tone of NOTE_E4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “4”, buzzer will play a tone of NOTE_F4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “5”, buzzer will play a tone of NOTE_G4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “6”, buzzer will play a tone of NOTE_A4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “7”, buzzer will play a tone of NOTE_B4.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “8”, buzzer will play a tone of NOTE_C5.
+
+Press the
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png),
+Bluetooth module sends the character “P”, buzzer will play a song HAPPY
+BIRTHDAY.
+
+Here we need to set up the variable“**mus**”to represent the number of
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)pressed.
+
+Click **“Variables”**, drag out the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png); and drag the
+block![](media/e4ca6cf968f2bcc710de5bc2813d5027.png)from **“Math”** into the
+block![](media/9674f01f77ae2848a624052c6db06c0c.png). And
+change“item”into“**mus**”; set the value to 0.
+
+Go to **“Control”**, we drag out the
+block![](media/95e82c73112f2aa5495bfaef192002ae.png)into the main program **case
+‘P’**
+
+And drag out the block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png)from
+**“Math”** into the **while** statement. Then drag the
+block![](media/51143649919147a989b2d8ecb75f82a6.png)from the **“Variables”** 
+into the first input box of
+block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); drag the
+block![](media/5cde38c0e9ceceb5a70ec58a8cb4dcaf.png)from the **“Math”** into the
+second input box of block![](media/f0ab0a0c554bf3eee92447046b2aeee7.png); change
+the “0” into “1” and change the“=”into **“＜”** .
+
+![](media/222bc28c78f51e32bd710dd60b361c48.png)
+
+Go to **“Desktop_Car_V3”**，drag out the
+block![](media/424519bc48c80e2282d4dbdd422114ee.png) into the block
+![](media/d453fb30e77d5a5ca7ec09875718eeb8.png); click the drop-down triangle to
+select the birthday song; and drag out the
+block![](media/ab7610416aee5c0567bad3123138877d.png) beneath the birthday block.
+
+Then drag out the block![](media/d14d88291851d17830489ebeb98302d2.png)from the
+**“Variables”** beneath the
+block![](media/ab7610416aee5c0567bad3123138877d.png); drag out the
+block![](media/fe17510ba2d85db2019effd40eb213bb.png)from the **“Math”** into the
+block![](media/d14d88291851d17830489ebeb98302d2.png). And again drag and drop
+the block![](media/51143649919147a989b2d8ecb75f82a6.png)into the input box at
+the left side of“+”, replacing 1; the right side value 1 remains the same.
+
+So can get this block ![](media/03ec389aa5cae419442b6a65d6a2fbbc.png) and drag
+this block beneath the No Tone block.
+
+![](media/0097ad42bd6359ecd7b9f76ac7e20609.png)
+
+To make the number of
+button![Screenshot_2019-06-17-14-21-14-90](media/a7802a1c7687d7241836a8b28b97258b.png)pressed
+return 0, we go to drag out the
+block![](media/d14d88291851d17830489ebeb98302d2.png) into the main program
+**case ‘P’** and assign value 0.
+
+![](media/1e355ceee969f5193bf6c3c6393e7577.png)
+
+Now we’ve written well the program code for multiple functions. Upload the code
+to see the final effect!
+
+![](media/89984592f931ec54ea7909e16b5069e4.png)**Note:** Can’t connect the
+Bluetooth module when upload the code, otherwise, code upload fails. You should
+upload the code success, then plug in the Bluetooth module.
+
+**  
+**
+
+![蓝牙(1)](media/69167a85d018e9a721a34138783245cc.jpeg)
+
+**Test Result**
+
+Connect the UNO R3 control board to computer’s USB port with USB cable to upload
+the code. Turn the slide switch ON.
+
+Connected Bluetooth module, we can use Bluetooth APP to navigate the desktop car
+by clicking the different buttons on the APP.
+
+Tap Stop button to pause the function.
+
+**Note:** the Android Bluetooth APP **CANNOT** realize the voice
+control.**![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png)**
+
+**  
+**
+
+# Resource Download
+
+-   You can get more reference from below links:
+
+-   KEYESTUDIO WIKI: <http://wiki.keyestudio.com/>
+
+-   All the relevant info download from:  
+    <https://1drv.ms/u/s!ArhgRvK6-RyJcxRRe3SxqYE_X3I?e=fJHrQl>
+
+-   Assembly Video Link:
+    [http://video.keyestudio.com/ks0441/](http://www.keyestudio.com/wp/ks0313/)
+
+# Our Tutorial
+
+This tutorial is designed for everyone to play the smart car. You will learn all
+the basic information about how to control the smart car with controller board,
+sensors and components. Simple to learn and Easy to play!
+
+It’s just the beginning of programming journey. There are more and more awesome
+projects for you to explore. Furthermore, our KEYESTUDIO research and
+development team will continue to explore on this path, walking you through the
+basics up to complex projects.
+
+# About keyestudio
+
+Located in Shenzhen, the Silicon Valley of China, KEYES DIY ROBOT CO.,LTD is a
+thriving technology company dedicated to open-source hardware research and
+development, production and marketing.
+
+Keyestudio is a best-selling brand owned by KEYES Corporation, our product lines
+range from Arduino boards, shields, sensor modules, Raspberry Pi, micro:bit
+extension boards and smart car to complete starter kits designed for customers
+of any level to learn Arduino knowledge.
+
+All of our products comply with international quality standards and are greatly
+appreciated in a variety of different markets throughout the world. For more
+details of our products, you can check it from the links below.
+
+**Official Website:** <http://www.keyestudio.com/>
+
+**US Amazon storefront:** <http://www.amazon.com/shops/A26TCVWBQE4D9T>
+
+**CA Amazon storefront:** <http://www.amazon.ca/shops/A26TCVWBQE4D9T>
+
+**UK Amazon storefront:** <http://www.amazon.co.uk/shops/A39F7KX4U3W9JH>
+
+**DE Amazon storefront:** <http://www.amazon.de/shops/A39F7KX4U3W9JH>
+
+**FR Amazon storefront:** <http://www.amazon.de/shops/A39F7KX4U3W9JH>
+
+**ES Amazon storefront:** <http://www.amazon.de/shops/A39F7KX4U3W9JH>
+
+**IT Amazon storefront:** <http://www.amazon.de/shops/A39F7KX4U3W9JH>
+
+**US Amazon storefront:** <http://www.amazon.com/shops/APU90DTITU5DG>
+
+**CA Amazon storefront:** <http://www.amazon.ca/shops/APU90DTITU5DG>
+
+**JP Amazon storefront:** <http://www.amazon.jp/shops/AE9VWCCXQIC6J>
+
+# Customer Service
+
+As a continuous and fast growing technology company, we keep striving our best
+to offer you excellent products and quality service as to meet your expectation.
+We look forward to hearing from you and any of your critical
+
+![logo (2)](media/1967f7d0c97e5b3955345012b267952a.png)comment or suggestion
+would be much valuable to us.
+
+You can reach out to us by simply drop a line at
+[Fennie@keyestudio.com](mailto:Fennie@keyestudio.com)
+
+Thank you in advance.

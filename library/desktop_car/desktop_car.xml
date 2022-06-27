@@ -1,0 +1,121 @@
+
+type="company" 
+block="block/desktop_car.js"
+generator="generator/desktop_car.js" 
+language="language/desktop_car/" 
+lib="desktop_car"
+hardware="hardware/arduino"
+media="media/desktop_car" 
+
+
+<script type="text/javascript" src="../../blocks/company/desktop_car.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/desktop_car.js"></script>
+<category id="xiuxian" name="Desktop-Car-V3" colour="20">
+
+<!--          desktop_car              -->
+
+
+		<block type="desk_led">
+			
+		</block>
+
+		<block type="FRONT">
+			<value name="speed_F">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="BACK">
+			<value name="speed_B">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="LEFT">
+			<value name="speed_L">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="TURN_LEFT">
+			
+		</block>
+
+		<block type="RIGHT">
+			<value name="speed_R">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="TURN_RIGHT">
+			
+		</block>
+
+		<block type="STOP">
+			
+		</block>
+
+		<!--          desktop_car避障传感器               -->
+		<block type="desk_avoid">
+			
+		</block>
+
+        <!--          desktop_car超声波               -->
+		<block type="desk_sr04">
+			
+		</block>
+
+		<!--          desktop_car循迹传感器               -->
+		<block type="desk_track">
+			
+		</block>
+		
+		<block type="tone_notes">
+			<value name="tone">
+				<shadow type="FREQUENCY"></shadow>
+			</value>
+		</block>
+
+		<!--          desktop_car蜂鸣器               -->
+		<block type="desk_buzzer">
+			<value name="FREQUENCY">
+				<shadow type="tone_notes"></shadow>
+			</value>
+		</block>
+
+		<!--          desktop_car音乐              -->
+		<block type="desk_music">
+			
+		</block>
+		
+		<!--          desktop_car关闭蜂鸣器               -->
+		<block type="desk_notone">
+			
+		</block>
+
+
+
+        <!--          desktop_car红外接收               -->
+		<block type="desk_ir_r">
+			
+		</block>
+        
+         <!--          desktop_car蓝牙接收               -->
+		<block type="desk_bluetooth">
+			
+		</block>
+
+
+
+<!--          desktop_car             -->
+
+
+</category>
