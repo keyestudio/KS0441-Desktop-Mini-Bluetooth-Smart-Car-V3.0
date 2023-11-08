@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Self-balancing Car'
+project = 'Desktop Car'
 copyright = 'keyestudio'
 author = 'keyestudio'
 
