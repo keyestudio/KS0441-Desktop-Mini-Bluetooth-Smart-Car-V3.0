@@ -7,16 +7,16 @@ goog.require('Blockly.Arduino');
 /////////////////////////led///////////////////////
 Blockly.Arduino.desk_led = function() {
   var dropdown_stat = this.getFieldValue('STAT');
-  Blockly.Arduino.setups_['setup_output_led'] = 'pinMode(3, OUTPUT);';
-  var code = 'digitalWrite(3,'+dropdown_stat+');\n'
+  Blockly.Arduino.setups_['setup_output_led'] = 'pinMode(9, OUTPUT);';
+  var code = 'digitalWrite(9,'+dropdown_stat+');\n'
   return code;
 };
 
 
 ////////////////////////////////ks0441_MOTOR_START//////////////////////////
 Blockly.Arduino.KS0441_START = function() {
-  //Blockly.Arduino.setups_['setup_front_'] = 'pinMode(4, OUTPUT);\n  pinMode(5, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(9, OUTPUT);';
-  var code = '  pinMode(4, OUTPUT);\npinMode(5, OUTPUT);\npinMode(2, OUTPUT);\npinMode(9, OUTPUT);\n\npinMode(A0,INPUT);\npinMode(A2,INPUT);\n';
+  //Blockly.Arduino.setups_['setup_front_'] = 'pinMode(4, OUTPUT);\n  pinMode(5, OUTPUT);\n  pinMode(2, OUTPUT);\n  pinMode(6, OUTPUT);';
+  var code = '  pinMode(4, OUTPUT);\npinMode(5, OUTPUT);\npinMode(2, OUTPUT);\npinMode(6, OUTPUT);\n\npinMode(A1,INPUT);\npinMode(A2,INPUT);\n';
   return code;
 };
 
@@ -27,8 +27,8 @@ Blockly.Arduino.Desktop_Car = function() {
   //var speed = Blockly.Arduino.valueToCode(this, 'speed', Blockly.Arduino.ORDER_ATOMIC) || '0';
   var dropdown_type = this.getFieldValue('direction');
 
-  Blockly.Arduino.definitions_['front'] = 'void front() \n{\n  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_speed+');\n  digitalWrite(2,HIGH);\n  analogWrite(9,'+value_speed+');\n}\n';
-  Blockly.Arduino.definitions_['back'] = 'void back() \n{\n  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_speed+');\n  digitalWrite(2,HIGH);\n  analogWrite(9,'+value_speed+');\n}\n';
+  Blockly.Arduino.definitions_['front'] = 'void front() \n{\n  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_speed+');\n  digitalWrite(2,HIGH);\n  analogWrite(6,'+value_speed+');\n}\n';
+  Blockly.Arduino.definitions_['back'] = 'void back() \n{\n  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_speed+');\n  digitalWrite(2,HIGH);\n  analogWrite(6,'+value_speed+');\n}\n';
 
   var code = '';
   if (dropdown_type == "front") code += 'front();';
@@ -37,7 +37,7 @@ Blockly.Arduino.Desktop_Car = function() {
   if (dropdown_type == "right") code += 'right();';
 
   //Blockly.Arduino.setups_['setup_front_'] = 'pinMode(4, OUTPUT);\n  pinMode(2, OUTPUT);';
-   //var code = '  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_front+');\n  digitalWrite(2,HIGH);\n  analogWrite(9,'+value_front+');'; 
+   //var code = '  digitalWrite(4,HIGH);\n  analogWrite(5,'+value_front+');\n  digitalWrite(2,HIGH);\n  analogWrite(6,'+value_front+');'; 
   return code;
 };
 
@@ -50,9 +50,9 @@ Blockly.Arduino.FRONT = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
 
-   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,'+value_front+');\ndigitalWrite(2,HIGH);\nanalogWrite(9,'+value_front+');\n'; 
+   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,'+value_front+');\ndigitalWrite(2,HIGH);\nanalogWrite(6,'+value_front+');\n'; 
   return code;
 };
 
@@ -65,8 +65,8 @@ Blockly.Arduino.BACK = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,'+value_back+');\ndigitalWrite(2,LOW);\nanalogWrite(9,'+value_back+');\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,'+value_back+');\ndigitalWrite(2,LOW);\nanalogWrite(6,'+value_back+');\n'; 
   return code;
 };
 
@@ -79,8 +79,8 @@ Blockly.Arduino.LEFT = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,'+value_left+');\ndigitalWrite(2,HIGH);\nanalogWrite(9,'+value_left+');\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,'+value_left+');\ndigitalWrite(2,HIGH);\nanalogWrite(6,'+value_left+');\n'; 
   return code;
 };
 
@@ -89,8 +89,8 @@ Blockly.Arduino.TURN_LEFT = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,100);\ndigitalWrite(2,HIGH);\nanalogWrite(9,180);\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,100);\ndigitalWrite(2,HIGH);\nanalogWrite(6,180);\n'; 
   return code;
 };
 
@@ -104,8 +104,8 @@ Blockly.Arduino.RIGHT = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,'+value_right+');\ndigitalWrite(2,LOW);\nanalogWrite(9,'+value_right+');\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,'+value_right+');\ndigitalWrite(2,LOW);\nanalogWrite(6,'+value_right+');\n'; 
   return code;
 };
 
@@ -115,8 +115,8 @@ Blockly.Arduino.TURN_RIGHT = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,180);\ndigitalWrite(2,HIGH);\nanalogWrite(9,100);\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,HIGH);\nanalogWrite(5,180);\ndigitalWrite(2,HIGH);\nanalogWrite(6,100);\n'; 
   return code;
 };
 
@@ -126,19 +126,19 @@ Blockly.Arduino.STOP = function() {
   Blockly.Arduino.setups_['setup_output_m1'] = 'pinMode(4, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_p1'] = 'pinMode(5, OUTPUT);';
   Blockly.Arduino.setups_['setup_output_m2'] = 'pinMode(2, OUTPUT);';
-  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(9, OUTPUT);';
-   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,0);\ndigitalWrite(2,LOW);\nanalogWrite(9,0);\n'; 
+  Blockly.Arduino.setups_['setup_output_p2'] = 'pinMode(6, OUTPUT);';
+   var code = 'digitalWrite(4,LOW);\nanalogWrite(5,0);\ndigitalWrite(2,LOW);\nanalogWrite(6,0);\n'; 
   return code;
 };
 
 //////////////////////////红外避障///////////////////////////
 Blockly.Arduino.desk_avoid = function() {
   var dropdown_type = this.getFieldValue('avoid02');
-  Blockly.Arduino.setups_['setup_output_left'] = 'pinMode(A0, INPUT);';
+  Blockly.Arduino.setups_['setup_output_left'] = 'pinMode(A1, INPUT);';
   Blockly.Arduino.setups_['setup_output_right'] = 'pinMode(A2, INPUT);';
 
   var code = '';
-  if (dropdown_type == "left") code += 'digitalRead(A0)';
+  if (dropdown_type == "left") code += 'digitalRead(A1)';
   if (dropdown_type == "right") code += 'digitalRead(A2)';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
@@ -162,12 +162,12 @@ Blockly.Arduino.desk_sr04 = function () {
 //////////////////////////循迹模块///////////////////////////
 Blockly.Arduino.desk_track = function() {
   var dropdown_type = this.getFieldValue('track');
-  Blockly.Arduino.setups_['setup_output_trackleft'] = 'pinMode(6, INPUT);';
+  Blockly.Arduino.setups_['setup_output_trackleft'] = 'pinMode(11, INPUT);';
   Blockly.Arduino.setups_['setup_output_trackcenter'] = 'pinMode(7, INPUT);';
   Blockly.Arduino.setups_['setup_output_trackright'] = 'pinMode(8, INPUT);';
 
   var code = '';
-  if (dropdown_type == "track_left") code += 'digitalRead(6)';
+  if (dropdown_type == "track_left") code += 'digitalRead(11)';
   if (dropdown_type == "track_center") code += 'digitalRead(7)';
   if (dropdown_type == "track_right") code += 'digitalRead(8)';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
@@ -182,21 +182,21 @@ Blockly.Arduino.tone_notes = function() {
 Blockly.Arduino.desk_buzzer=function(){
    var fre = Blockly.Arduino.valueToCode(this, 'FREQUENCY',
       Blockly.Arduino.ORDER_ASSIGNMENT) || '0';
-   Blockly.Arduino.setups_['setup_output_11'] = 'pinMode(11, OUTPUT);';
+   Blockly.Arduino.setups_['setup_output_10'] = 'pinMode(10, OUTPUT);';
    var code = ""; 
    /*if(window.isNaN(dropdown_pin)){
-      code = code+'pinMode(11, OUTPUT);\n';
+      code = code+'pinMode(10, OUTPUT);\n';
    }else{
-      Blockly.Arduino.setups_['setup_output_11'] = 'pinMode(11, OUTPUT);';
+      Blockly.Arduino.setups_['setup_output_10'] = 'pinMode(10, OUTPUT);';
    }*/
-   code += "tone(11,"+fre+");\n";
+   code += "tone(10,"+fre+");\n";
    return code;
 };
 
 //////////////////////////music///////////////////////////
 Blockly.Arduino.desk_music = function() {
-  Blockly.Arduino.setups_['setup_output_music'] = 'pinMode(11, OUTPUT);';
-  Blockly.Arduino.definitions_['include_birthday'] = 'void birthday()\n{\n  tone(11,294);\n  delay(250);\n  tone(11,440);\n  delay(250);\n  tone(11,392);\n  delay(250);\n  tone(11,532);\n  delay(250);\n  tone(11,494);\n  delay(500);\n  tone(11,392);\n  delay(250);\n  tone(11,440);\n  delay(250);\n  tone(11,392);\n  delay(250);\n  tone(11,587);\n  delay(250);\n  tone(11,532);\n  delay(500);\n  tone(11,392);\n  delay(250);\n  tone(11,784);\n  delay(250);\n  tone(11,659);\n  delay(250);\n  tone(11,532);\n  delay(250);\n  tone(11,494);\n  delay(250);\n  tone(11,440);\n  delay(250);\n  tone(11,698);\n  delay(375);\n  tone(11,659);\n  delay(250);\n  tone(11,532);\n  delay(250);\n  tone(11,587);\n  delay(250);\n  tone(11,532);\n  delay(500);\n}\n';
+  Blockly.Arduino.setups_['setup_output_music'] = 'pinMode(10, OUTPUT);';
+  Blockly.Arduino.definitions_['include_birthday'] = 'void birthday()\n{\n  tone(10,294);\n  delay(250);\n  tone(10,440);\n  delay(250);\n  tone(10,392);\n  delay(250);\n  tone(10,532);\n  delay(250);\n  tone(10,494);\n  delay(500);\n  tone(10,392);\n  delay(250);\n  tone(10,440);\n  delay(250);\n  tone(10,392);\n  delay(250);\n  tone(10,587);\n  delay(250);\n  tone(10,532);\n  delay(500);\n  tone(10,392);\n  delay(250);\n  tone(10,784);\n  delay(250);\n  tone(10,659);\n  delay(250);\n  tone(10,532);\n  delay(250);\n  tone(10,494);\n  delay(250);\n  tone(10,440);\n  delay(250);\n  tone(10,698);\n  delay(375);\n  tone(10,659);\n  delay(250);\n  tone(10,532);\n  delay(250);\n  tone(10,587);\n  delay(250);\n  tone(10,532);\n  delay(500);\n}\n';
   Blockly.Arduino.definitions_['include_tone'] = '//tone\n#define D0 -1\n#define D1 262\n#define D2 293\n#define D3 329\n#define D4 349\n#define D5 392\n#define D6 440\n#define D7 494\n#define M1 523\n#define M2 586\n#define M3 658\n#define M4 697\n#define M5 783\n#define M6 879\n#define M7 987\n#define H1 1045\n#define H2 1171\n#define H3 1316\n#define H4 1393\n#define H5 1563\n#define H6 1755\n#define H7 1971\n\n#define WHOLE 1\n#define HALF 0.5\n#define QUARTER 0.25\n#define EIGHTH 0.25\n#define SIXTEENTH 0.625\n ';
   
   Blockly.Arduino.definitions_['include_tune'] = '\nint tune[]= \n{\n  M3,M3,M4,M5,\n  M5,M4,M3,M2,\n  M1,M1,M2,M3,\n  M3,M2,M2,\n  M3,M3,M4,M5,\n  M5,M4,M3,M2,\n  M1,M1,M2,M3,\n  M2,M1,M1,\n  M2,M2,M3,M1,\n  M2,M3,M4,M3,M1,\n  M2,M3,M4,M3,M2,\n  M1,M2,D5,D0,\n  M3,M3,M4,M5,\n  M5,M4,M3,M4,M2,\n  M1,M1,M2,M3,\n  M2,M1,M1\n};';
@@ -217,9 +217,9 @@ Blockly.Arduino.desk_music = function() {
 
 Blockly.Arduino.desk_notone=function(){
    //var dropdown_pin = Blockly.Arduino.valueToCode(this, 'PIN',Blockly.Arduino.ORDER_ATOMIC);
-   Blockly.Arduino.setups_['setup_output'] = 'pinMode(11, OUTPUT);';
+   Blockly.Arduino.setups_['setup_output'] = 'pinMode(10, OUTPUT);';
    var code='';
-   code += "noTone(11);\n";
+   code += "noTone(10);\n";
    return code;
 };
 
@@ -238,8 +238,8 @@ Blockly.Arduino.desk_ir_r = function () {
        Blockly.Variables.NAME_TYPE);
     Blockly.Arduino.definitions_['include_IRremote'] = '#include <IRremote.h>\n';
     //Blockly.Arduino.definitions_['var_declare'+varName] = 'long '+varName+';\n';
-    Blockly.Arduino.definitions_['var_ir_recv_A1'] = 'IRrecv irrecv(A1);\ndecode_results results;\n';
-    Blockly.Arduino.setups_['setup_ir_recv_A1'] = 'irrecv.enableIRIn();';
+    Blockly.Arduino.definitions_['var_ir_recv_D03'] = 'IRrecv irrecv(3);\ndecode_results results;\n';
+    Blockly.Arduino.setups_['setup_ir_recv_D03'] = 'irrecv.enableIRIn();';
     var code = "if (irrecv.decode(&results)) {\n"
     code += '  ' + variable + '=results.value;\n';
     code += '  String type="UNKNOWN";\n';
